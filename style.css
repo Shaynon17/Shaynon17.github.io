@@ -446,3 +446,64 @@ font-size: 95%;
 }
 
 /* Above is the CSS for the footer */
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+form {
+    background: blue;
+    width: 500px;
+    padding:30px;
+    font-size: 18px;
+}
+
+.message_icon{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.message_icon i{
+    font-size: 40px;
+}
+
+.message_icon span{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+form input, textarea{
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+
+#input-field{
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#input-field i{
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+.send_btn{
+    width: 100px;
+    border: none;
+    background: #000;
+    color: white;
+    font-size: 16px;
+    padding: 6px 0;
+    border-radius: 50px;
+}
