@@ -446,20 +446,28 @@ font-size: 95%;
 }
 
 /* Above is the CSS for the footer */
+
+
+
+/* Below is the CSS for the contact page */
 .hero {
     width: 100%;
-    height: 100vh;
+    /* height: 10%; */
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 40px;
     /* background-color: red; */
 }
 
 form {
-    background: blue;
-    width: 500px;
+    background: #d3d3d3;
+    width: 80%;
+    height: 100%;
     padding:30px;
     font-size: 18px;
+    border: #000;
+    border-radius: 100px; /* this is how rounded the edges are*/
 }
 
 .message_icon{
@@ -480,11 +488,11 @@ form {
 
 form input, textarea{
     width: 100%;
-    border-top: none;
+    /* border-top: none;
     border-left: none;
-    border-right: none;
-    border-bottom: 1px solid #000;
-    outline: none;
+    border-right: none; */
+    /* border-bottom: 1px solid #000; */
+    /* outline: none; */
 }
 
 #input-field{
@@ -505,5 +513,9 @@ form input, textarea{
     color: white;
     font-size: 16px;
     padding: 6px 0;
-    border-radius: 50px;
+    border-radius: 100px;
+}
+
+.send_btn:hover {
+    font-size: 115%;
 }
