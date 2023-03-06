@@ -543,6 +543,10 @@ font-size: 95%;
     padding-top: 30px;
 }
 
+.footer_contact:hover {
+    opacity: 0.5;
+}
+
 /* Above is the CSS for the footer */
 
 
