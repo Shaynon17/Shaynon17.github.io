@@ -142,6 +142,13 @@ div.digital_gaming_center a:hover{
 }
 
 
+.click_here{
+    text-decoration: underline;
+}
+
+.click_here:hover {
+    opacity: 0.5;
+}
 
 .shop {
     padding-top: 80px;
@@ -182,10 +189,14 @@ div.digital_gaming_center a:hover{
  }
 
   p {
-      width: 75%;
+      width: 100%;
       text-align: center;
       margin: auto;
   }
+
+#a-z_bar {
+    width: 100%;
+}
 
 
         /*DATA TABLE BELOW */
