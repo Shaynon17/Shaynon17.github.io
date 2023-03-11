@@ -367,6 +367,21 @@ opacity: 0.5;
 /* CSS for tutorial page template above */
 
 
+/* Below is CSS for Scoreboards */
+
+
+.ninetyNine_scoreboard{
+    display: block;
+    text-align: center;
+}
+
+#ninetyNine_countLabel{
+/* display: block;
+text-align: center; */
+font-size: 50px;
+}
+
+/* Above is CSS for Scoreboards */
 
 
 /* Below is the CSS for the contact page */
