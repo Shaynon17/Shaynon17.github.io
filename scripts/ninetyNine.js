@@ -1,7 +1,7 @@
 let count = 0
 
 document.getElementById("ninetyNine_decreaseBtn").onclick = function () {
-    count -= 1;
+    count -= 10;
     document.getElementById("ninetyNine_countLabel").innerHTML = count;
 }
 

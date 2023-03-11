@@ -58,7 +58,7 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
         <h3>Objective</h3> 
         <p>The object of the game is to avoid playing a card in the middle that causes the running total to exceed 99.
             Each player
-            starts with three tokens. The player to reach or go over 99 loses a token.</p>
+            starts with three tokens. The player to go over 99 loses a token.</p>
 
         <h3>Deal</h3> 
         <p>Each player is dealt three cards, one at a time. The remaining cards are placed in the middle.</p>
@@ -95,12 +95,14 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
 
     </div>
 
+
 <div class="ninetyNine_scoreboard">
+        <h3>Middle Running Total</h3>
     <label id="ninetyNine_countLabel">0</label><br>
-<button id="ninetyNine_decreaseBtn" >Decrease</button>
-<button id="ninetyNine_resetBtn">Reset</button>
-<button id="ninetyNine_increaseBtn">Increase</button>
-<button id="ninetyNine_kingBtn">King</button>
+    <button id="ninetyNine_resetBtn">Reset<br><br> (0)</button>
+<button id="ninetyNine_decreaseBtn">Decrease<br><br>-10</button>
+<button id="ninetyNine_increaseBtn">Increase<br><br>+1</button>
+<button id="ninetyNine_kingBtn">King<br><br>(99)</button>
 <script src="../scripts/ninetyNine.js"></script>
 </div>
 
