@@ -404,6 +404,51 @@ padding-bottom: 100px;
     border-radius: 12px;
 }
 
+
+
+/* rummy500 Below*/
+
+.rummy500_scoreboard{
+    touch-action: manipulation;
+    display: block;
+        text-align: center;
+}
+
+.rummy500_scoreboard h3 {
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.rummy500_scoreboard button{
+width: 8%;
+    /* padding: 50px 10px; */
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 20px 10px;
+}
+
+.rummy500_scoreboard label {
+    padding: 10px 10px;
+    font-size: 30px;
+    
+}
+
+.rummy500_scoreboard input {
+/* color: red; */
+font-size: 20px;
+max-width: 18%;
+}
+#rummy500_resetBtn {
+    width: 20%;
+    text-decoration-style: ;
+}
+
+
+/* .rummy500_scoreboard input, select, textarea {
+    color: red;
+} */
+
 /* Above is CSS for Scoreboards */
 
 
