@@ -38,8 +38,7 @@
     font-weight: 200;
 }
 .donate_button {
-    /* color: #65ff00; */
-    color: red;
+    color: #65ff00;
     padding: 2px 2px;
     padding-right: 35px;
 }
