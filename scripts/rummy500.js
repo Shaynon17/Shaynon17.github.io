@@ -10,6 +10,16 @@ document.getElementById("rummy500_minusFiveBtn").onclick = function () {
     document.getElementById("rummy500_countLabel").innerHTML = count;
 }
 
+document.getElementById("rummy500_minusOneBtn").onclick = function () {
+    count -= 1;
+    document.getElementById("rummy500_countLabel").innerHTML = count;
+}
+
+document.getElementById("rummy500_addOneBtn").onclick = function () {
+    count += 1;
+    document.getElementById("rummy500_countLabel").innerHTML = count;
+}
+
 document.getElementById("rummy500_addFiveBtn").onclick = function () {
     count += 5;
     document.getElementById("rummy500_countLabel").innerHTML = count;
