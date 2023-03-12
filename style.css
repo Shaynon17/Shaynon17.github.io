@@ -44,6 +44,11 @@
     color: white;
 }
 
+.logo_container a:hover {
+    /* font-size: 115%; */
+    opacity: 0.5;
+}
+
 .donate_button {
     color: #65ff00;
     padding: 2px 2px;
