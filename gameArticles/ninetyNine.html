@@ -21,7 +21,7 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
     <div class="header">
         <div class="inner_header">
             <div class="logo_container">
-                <h1>Practical<span>GamingCenter</span></h1>
+                <h1><a href="../index.html">Practical<span>GamingCenter</span></a></h1>
             </div>
             <ul class="navigation">
                 <a href="../index.html">
@@ -45,7 +45,8 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
     <div class="game">
         <h1>How to Play 99 Card Game<br>(Ninety-Nine)</h1> 
         <!--------------------- Fill in SEO ----------------------------------------------------------------------------->
-        <p class="pseo">99 is an addition game.<br> Certain cards have special properties instead of having numeric value.This game is a fun way to help children learning math</p> 
+        <p class="pseo">99 is an addition game.<br> Certain cards have special properties instead of having numeric value.
+            This game is a fun way to help children learning math</p> 
         <!--------------------- Fill in SEO ------------------------------------------------------------------>
         <h2>99 Card Game Rules</h2> 
         <!--------------------- Fill in SEO -------------------------------------------------------------------------------->
@@ -57,7 +58,7 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
         <h3>Objective</h3> 
         <p>The object of the game is to avoid playing a card in the middle that causes the running total to exceed 99.
             Each player
-            starts with three tokens. The player to reach or go over 99 loses a token.</p>
+            starts with three tokens. The player to go over 99 loses a token.</p>
 
         <h3>Deal</h3> 
         <p>Each player is dealt three cards, one at a time. The remaining cards are placed in the middle.</p>
@@ -91,18 +92,26 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
         <h3>Winner</h3> 
         <p>The last player with a token is the winner.
 </p>
-<!-- 
-        <h3>Variants</h3> 
-        <p>x</p> -->
-
+ 
     </div>
 
-    <div class="footer">
 
-        <h3>Contact</h3>
-        <p class="footer_email">PracticalGamingCenter@yahoo.com</p>
+<div class="ninetyNine_scoreboard">
+        <h3>Middle Running Total</h3>
+    <label id="ninetyNine_countLabel">0</label><br>
+    <button id="ninetyNine_resetBtn">Reset<br><br> (0)</button>
+<button id="ninetyNine_decreaseBtn">Decrease<br><br>-10</button>
+<button id="ninetyNine_increaseBtn">Increase<br><br>+1</button>
+<button id="ninetyNine_kingBtn">King<br><br>(99)</button>
+<script src="../scripts/ninetyNine.js"></script>
+</div>
+
+    
+    <div class="footer">
         <ul>
-            <a rel="nofollow" rel="sponsored" target="_blank" href="https://www.etsy.com/shop/DigitalGamingCenter?coupon=HALFOFF">
+    
+            <a rel="nofollow" rel="sponsored" target="_blank"
+                href="https://www.etsy.com/shop/DigitalGamingCenter?coupon=HALFOFF">
                 <li class="footer_etsy">Etsy Store</li>
             </a>
             <a rel="nofollow" target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=3R6SK3PHRWMT8">
@@ -110,9 +119,11 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
                     <li class="footer_donate">DONATE</li>
                 </button>
             </a>
+        <a href="../contact.html">
+                <li class="footer_contact">Contact</li><a>
         </ul>
         <li class="bottom_of_page"></li>
-
+    
     </div>
 </body>
 

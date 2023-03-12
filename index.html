@@ -6,11 +6,14 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
 have phones data off and phone + computer need to be on the same wifi
 open git and type: npx localview --port 5500
 (port needs to be current port)-->
+<!--To publish open git and enter: ./publish.sh -->
+
 <html>
 
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Practical Gaming Center</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 </head>
 
@@ -19,7 +22,7 @@ open git and type: npx localview --port 5500
     <div class="header">
         <div class="inner_header">
             <div class="logo_container">
-                <h1>Practical<span>GamingCenter</span></h1>
+                <h1><a href="../index.html">Practical<span>GamingCenter</span></a></h1>
 
             </div>
             <ul class="navigation">
@@ -45,7 +48,7 @@ open git and type: npx localview --port 5500
     <!-- <div class="fannedCards">
         <img width="400" src="https://m.media-amazon.com/images/I/41kxBC8v0wS._AC_SY350_.jpg">
     </div> -->
-
+ 
 
 <div class="home_tutorials">
         <a href="aztutorials.html"><h2>A-Z Tutorials</h2></a>
@@ -55,7 +58,7 @@ open git and type: npx localview --port 5500
         games like dice games, board games, and games that need no materials, will be added soon. I like to keep things simple.
         You will find concise rules to get started with a game, or for a refresher on how the game works if needed. These
         tutorials are for all levels of players. Browse the A-Z Tutorials to find your next game for game night. Can't find a
-        game you are looking for? Look below to learn how to help this library grow.</p><br>
+        game you are looking for? <a class="click_here" href="contact.html"><span>Click Here</span></a> to learn how to help this library grow.</p><br>
 </div>
 
 
@@ -83,10 +86,8 @@ open git and type: npx localview --port 5500
 <!-- The below is the html for the footer -->
 
 <div class="footer">
-
-        <h3>Contact</h3>
-        <p class="footer_email">PracticalGamingCenter@yahoo.com</p>
-<ul>
+    <ul>
+    
          <a rel="nofollow" rel="sponsored" target="_blank" href="https://www.etsy.com/shop/DigitalGamingCenter?coupon=HALFOFF">
     <li class="footer_etsy">Etsy Store</li>
          </a>
@@ -95,11 +96,12 @@ open git and type: npx localview --port 5500
      <li class="footer_donate">DONATE</li>
         </button>
           </a>
+        <a href="contact.html">
+            <li class="footer_contact" >Contact</li><a>
 </ul>
     <li class="bottom_of_page"></li>
 
 </div>
-
 
 
 </body>
