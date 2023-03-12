@@ -39,6 +39,11 @@
     font-size: 3vw;
     font-weight: 200;
 }
+
+.logo_container a {
+    color: white;
+}
+
 .donate_button {
     color: #65ff00;
     padding: 2px 2px;
