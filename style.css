@@ -417,7 +417,28 @@ padding-bottom: 100px;
     border-radius: 12px;
 }
 
+/* .bg-blue {
+    background-color: #001f3f;
+    color: #ffffff;
+    margin-bottom: 1em;
+    padding: 1em 1.5em;
+}
 
+.text-large {
+    font-size: 2em;
+} */
+
+.kingsinthecorner_scoreboard {
+touch-action: manipulation;
+    display: block;
+    text-align: center;
+}
+
+.kingsinthecorner_scoreboard h3 {
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
 
 /* rummy500 Below*/
 
@@ -435,7 +456,6 @@ padding-bottom: 100px;
 
 .rummy500_scoreboard button{
 width: 8%;
-    /* padding: 50px 10px; */
     font-size: 20px;
     border-radius: 12px;
     padding: 20px 10px;
@@ -448,19 +468,15 @@ width: 8%;
 }
 
 .rummy500_scoreboard input {
-/* color: red; */
 font-size: 20px;
 max-width: 18%;
 }
 #rummy500_resetBtn {
     width: 20%;
-    /* text-decoration-style: ; */
 }
 
 
-/* .rummy500_scoreboard input, select, textarea {
-    color: red;
-} */
+
 
 /* Above is CSS for Scoreboards */
 
