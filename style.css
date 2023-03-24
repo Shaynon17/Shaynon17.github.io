@@ -581,9 +581,13 @@ textarea {
     padding-top: 10px;
     display: table;
     float: left;
-    padding-right: 10px;
-        padding-left: 10px;
+    padding-right: 3px;
+        padding-left: 3px;
 }
+
+/* #sign_up_btn {
+    can i chang the button form input tag to butn tag?
+} */
 
 .sub_form h2 {
 display: flex;
