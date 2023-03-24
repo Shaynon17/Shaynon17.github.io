@@ -572,6 +572,7 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 20px;
 
 }
 
@@ -582,6 +583,11 @@ textarea {
     float: left;
     padding-right: 10px;
         padding-left: 10px;
+}
+
+.sub_form h2 {
+display: flex;
+    justify-content: center;
 }
 
 .sub_form p {
