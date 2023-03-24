@@ -498,7 +498,7 @@ max-width: 18%;
     padding-top: 40px;
 }
 
-form {
+.hero form {
     background: #d3d3d3;
     width: 80%;
     height: 100%;
@@ -525,7 +525,7 @@ form {
     margin-left: 15px;
 }
 
-form input,
+.hero form input,
 textarea {
     width: 100%;
     /* border-top: none;
@@ -560,16 +560,41 @@ textarea {
     font-size: 115%;
 }
 
+
 /* Above is the CSS for the contact page */
 
 
 
 
+/* CSS for the email subscribe form below */
+
+.email_subscribe_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.sub_form li {
+    padding-top: 10px;
+    display: table;
+    float: left;
+    padding-right: 10px;
+        padding-left: 10px;
+}
+
+.sub_form p {
+    padding-top: 5px;
+    /* background-color: red; */
+}
+
+ 
+
+/* CSS for the email subscribe form Above */
+
 
 /* CSS for the footer below */
-
-
-
 
 .footer ul {
     /* list-style-type: none; */
