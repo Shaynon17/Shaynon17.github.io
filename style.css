@@ -612,6 +612,7 @@ display: flex;
     padding-top: 20px;
     text-align: center;
     overflow: hidden;
+    font-size: 30px;
 }
 
 .footer li a {
@@ -645,14 +646,14 @@ font-size: 95%;
     color: #101010;
     background-color: #65ff00;;
     padding: 5px 20px;
+        font-size: 30px;
 }
 
 .footer_donate:hover {
     background-color: #101010;
     color: #65ff00;
     border: #101010 solid 1px;
-    font-weight: bold;
-    font-size: 115%;
+    /* font-weight: bold; */
 }
 
 .bottom_of_page {
