@@ -573,7 +573,7 @@ textarea {
     align-items: center;
     justify-content: center;
     padding-top: 20px;
-
+    padding-bottom: 20px;
 }
 
 
@@ -583,6 +583,8 @@ textarea {
     float: left;
     padding-right: 3px;
         padding-left: 3px;
+                font-size: 2vw;
+                /* background-color: red; */
 }
 
 /* #sign_up_btn {
@@ -592,16 +594,20 @@ textarea {
 .sub_form h2 {
 display: flex;
     justify-content: center;
+    font-size: 3vw;
+        /* background-color: red; */
 }
 
 .sub_form p {
-    padding-top: 5px;
+    padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 2vw;
     /* background-color: red; */
 }
 
- 
-
 /* CSS for the email subscribe form Above */
+
+
 
 
 /* CSS for the footer below */
