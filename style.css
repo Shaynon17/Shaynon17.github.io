@@ -95,7 +95,7 @@
     text-align: center;
     padding-top: 40px;
     padding-bottom: 20px;
-    font-size: 50px;
+    font-size: 45px;
 }
 
 
@@ -110,14 +110,22 @@
 
         /* When I add ads to this, derease the width of the text to fit the ads on the side*/
 
+.home_page p {
+    font-size: 25px;
+}
+
+.home_page h2 {
+    font-size: 37px;
+}
 div.home_tutorials{
     width: 75%;
 text-align: center;
 margin: auto;
 }
+
 div.home_tutorials h2{
     padding-bottom: 20px;
-    font-size: 50px;
+    font-size: 40px;
     text-decoration-line: underline;
 }
 
@@ -146,7 +154,7 @@ div.digital_gaming_center img {
 
 div.digital_gaming_center h2 {
     padding-bottom: 20px;
-    font-size: 50px;
+    font-size: 40px;
     text-decoration: underline;
 }
 
@@ -183,8 +191,6 @@ div.digital_gaming_center a:hover{
 
 
 
-
-
 /* CSS for aztutorials.html page below */
 
  .aztutorials {
@@ -201,11 +207,29 @@ div.digital_gaming_center a:hover{
      margin: auto;
  }
 
-  p {
+  .aztutorials p {
       width: 100%;
       text-align: center;
       margin: auto;
+      font-size: 25px;
   }
+
+ .aztutorials h1 {
+     font-size: 45px;
+ }
+
+ .aztutorials h2 {
+     font-size: 40px;
+ }
+
+ .aztutorials h3 {
+     font-size: 35px;
+ }
+
+.aztutorials li {
+    font-size: 25px;
+}
+
 
 #a-z_bar {
     width: 100%;
@@ -301,14 +325,14 @@ text-align: left;
 }
 
 .game .pseo {
-    width: 50%;
+    width: 75%;
         text-align: center;
         margin: auto;
         font-size: 25px;
 }
 
 .game p {
-    width: 50%;
+    width: 75%;
     text-align: left;
     margin: auto;
     font-size: 25px;
@@ -329,7 +353,7 @@ font-size: 40px;
     font-size: 35px;
     text-align: left;
     margin: auto;
-    width: 50%;
+    width: 75%;
             padding: 10px;
 }
 
@@ -337,7 +361,7 @@ font-size: 40px;
     font-size: 30px;
     text-align: left;
     margin: auto;
-    width: 50%;
+    width: 75%;
             padding: 10px;
 }
 
@@ -345,7 +369,7 @@ font-size: 40px;
 font-size: 25px;    
 text-align: left;
 margin: auto;
-width: 50%;
+width: 75%;
 }
 
 .game ul li {
@@ -356,14 +380,14 @@ padding: 10px 0;
     font-size: 25px;
     text-align: left;
     margin: auto;
-    width: 50%;
+    width: 75%;
 }
 #delete{
     color: red;
 }
 
 .game .type_players_supplies{
-width: 50%;
+width: 75%;
     text-align: center;
     margin: auto;
     font-size: 20px;
@@ -489,6 +513,29 @@ max-width: 18%;
 
 
 /* Below is the CSS for the contact page */
+
+
+.contact_page p {
+    font-size: 25px;
+}
+
+.contact_page h1 {
+    font-size: 45px;
+}
+
+.contact_page h2 {
+    font-size: 40px;
+}
+
+.contact_page h3 {
+    font-size: 35px;
+}
+
+.contact_page li {
+    font-size: 25px;
+}
+
+
 .hero {
     width: 100%;
     /* height: 10%; */
