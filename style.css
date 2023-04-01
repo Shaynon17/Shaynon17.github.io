@@ -572,9 +572,11 @@ max-width: 18%;
     margin-left: 15px;
 }
 
+
 .hero form input,
 textarea {
     width: 100%;
+        font-size: 25px;
     /* border-top: none;
     border-left: none;
     border-right: none; */
