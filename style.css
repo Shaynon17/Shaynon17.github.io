@@ -576,70 +576,67 @@ textarea {
     padding-bottom: 20px;
 }
 
+.email_subscribe_form form {
+    background-color: lightgray;
+    padding: 10px 10px;
+    /* box-shadow: 10px 10px 8px #888888 inset; */
+        box-shadow: 10px 10px 8px #888888;
+    border: 5px solid black;
+
+}
+
 .sub_form h2 {
-/* text-decoration: underline overline line-through; */
 text-decoration: underline;
 display: flex;
 justify-content: center;
-}
-
-.email_subscribe_form form {
-    background-color: lightgray;
-/* background: url('../images/pgcNewsPaper.png');
-background-size: cover; */
-        padding: 10px 10px;
-        /* height: 450px;
-        width: 600px; */
-        box-shadow: 10px 10px 8px #888888;
-        border: 5px solid black;
-        /* border-top: 10px solid;
-        border-left: 10px solid; */
-                /* border-right: 5px solid #888888;
-                        border-bottom: 5px solid #888888; */
+font-size: 3vw;
 }
 
 .newsPaper {
     display: inline-flex;
     align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
 }
-
 
 .newsPaper img {
     height: 150px;
     width: 200px;
-            /* border: 1px solid black; */
+    max-width: 33%;
+}
+
+
+.sub_form p {
+    font-size: 2vw;
 }
 
 .sub_form li {
-    padding-top: 10px;
+    /* padding-top: 10px; */
     display: table;
     float: left;
     padding-right: 3px;
-        padding-left: 3px;
-                font-size: 2vw;
+    padding-left: 3px;
+    font-size: 2vw;
+    /* border: 1px solid black; */
                 /* background-color: red; */
 }
 
 
 
-/* #sign_up_btn {
-    can i chang the button form input tag to butn tag?
-} */
-
-.sub_form h2 {
-/* display: flex;
-    justify-content: center; */
-    font-size: 3vw;
-        /* background-color: red; */
+#sign_up_btn {
+    border: 2px black;
+    border-radius: 16px;
+    font-size: 1.5vw;
+    padding: 3px 3px;
+        box-shadow: 5px 5px 8px #888888 inset;
+border: 1px solid black;
 }
 
-.sub_form p {
-    padding-top: 15px;
-        padding-bottom: 15px;
-        font-size: 2vw;
-    /* background-color: red; */
+#sign_up_btn:hover {
+cursor: pointer;
+opacity: 0.5;
 }
+
+
 
 /* CSS for the email subscribe form Above */
 
@@ -698,6 +695,7 @@ font-size: 95%;
     color: #65ff00;
     border: #101010 solid 1px;
     /* font-weight: bold; */
+    cursor: pointer;
 }
 
 .bottom_of_page {
