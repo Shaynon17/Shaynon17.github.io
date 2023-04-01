@@ -579,17 +579,36 @@ textarea {
 .sub_form h2 {
 /* text-decoration: underline overline line-through; */
 text-decoration: underline;
+display: flex;
+justify-content: center;
 }
 
 .email_subscribe_form form {
     background-color: lightgray;
+/* background: url('../images/pgcNewsPaper.png');
+background-size: cover; */
         padding: 10px 10px;
+        /* height: 450px;
+        width: 600px; */
         box-shadow: 10px 10px 8px #888888;
         border: 5px solid black;
         /* border-top: 10px solid;
         border-left: 10px solid; */
                 /* border-right: 5px solid #888888;
                         border-bottom: 5px solid #888888; */
+}
+
+.newsPaper {
+    display: inline-flex;
+    align-items: center;
+        justify-content: space-evenly;
+}
+
+
+.newsPaper img {
+    height: 150px;
+    width: 200px;
+            /* border: 1px solid black; */
 }
 
 .sub_form li {
@@ -609,8 +628,8 @@ text-decoration: underline;
 } */
 
 .sub_form h2 {
-display: flex;
-    justify-content: center;
+/* display: flex;
+    justify-content: center; */
     font-size: 3vw;
         /* background-color: red; */
 }
