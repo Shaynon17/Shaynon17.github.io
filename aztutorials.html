@@ -7,6 +7,7 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>A-Z Tutorial Index - Practical Gaming Center</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/azTutorials.js" ></script>
 </head>
 
 <!-- Google tag (gtag.js) Must stay immediateley after the <head> element -->
@@ -85,13 +86,21 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
         <div class="grow_the_library">
         <h2>Learn how you can help grow this library <a href="contact.html"><em>here.</em></a></h2> <br>
         </div>
+
+        <!-- <button onclick='singlePlayer()' >
+            Solitaire
+        </button><br><br>
+        <button onclick='twoPlayer()'>
+            2 Player
+        </button> -->
+
 <!--A-Z TABLE-->
         <table class="content_table">
 <!--A-->
             <tr>
             <!-- <th class="table_letter" scope="row"><a id="a">A</a></th> -->
            </tr>
-            <tr class="table_head">
+            <tr class="table_head solitaire twoPlayer ">
                 <th>A</th>
                 <th scope="col">Game</th>
                 <th scope="col">Players</th>
@@ -107,10 +116,8 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
             
             </tr> -->
 
-            </tr>
 
-
-<tr>
+<tr class="solitaire">
     <th></th>
     <th scope="row"><a href="gameArticles/aboveAndBelowSolitaire.html">Above and Below </a></th>
     <td>1</td>
@@ -128,7 +135,7 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
         </tr>
     
 
-<tr>
+<tr class="solitaire">
     <th></th>
     <th scope="row"><a href="gameArticles/acesAndKingsSolitaire.html">Aces and Kings </a></th>
     <td>1</td>
@@ -137,7 +144,7 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
 </tr>
 
 
-<tr>
+<tr class="solitaire">
     <th><a href="https://www.youtube.com/watch?v=cmBrOC2lDyE&t" target="_blank"><i class="fa fa-youtube-play"
             style="font-size:48px;color:red"></i></a></th>
     <th scope="row"><a href="gameArticles/acesUpSolitaire.html">Aces Up </a></th>
@@ -154,7 +161,7 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
     <td>1 Deck</td>
 </tr>
 
-<tr>
+<tr class="twoPlayer" >
     <th></th>
     <th scope="row"><a href="gameArticles/Agram.html">Agram</a></th>
     <td>2-5</td>
