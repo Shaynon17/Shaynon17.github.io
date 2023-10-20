@@ -24,6 +24,10 @@ if (!row.classList.contains(className)) {
         });
     }
 
+// this function reloads the page when i select the "reset" button
+function reset() {
+    return location.reload(true)
+}
 
 
     //CAP code that worked directly in my HTML document
