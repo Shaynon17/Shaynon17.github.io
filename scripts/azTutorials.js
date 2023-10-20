@@ -25,7 +25,7 @@ if (!row.classList.contains(className)) {
     }
 
 // this function reloads the page when i select the "reset" button
-// either i need to have ethe onClick event execute the reset function then the other function, or i need to have the page reset and then click anotehr function
+// either i need to have the onClick event execute the reset function then the other function, or i need to have the page reset and then click anotehr function
 //obviously there could be a different answer, try the above two first.
 //I think i will need another answer for when i have multiple filter options avaiable. 
 function reset() {
