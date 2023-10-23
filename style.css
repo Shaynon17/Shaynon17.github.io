@@ -5,6 +5,11 @@
     text-decoration: none;
 }
 
+/* This pads the a-z hyperlinks,
+making the nav bar not appear over the table heads when clicked */
+html {
+    scroll-padding-top: 5rem;
+}
 
 .header{
     position: fixed;
