@@ -1,25 +1,32 @@
+// import { MouseEvent } from "react";
+
+import { useState } from "react";
+
 function ListGroup() {
-    const items = [
+    let items = [
         'New york',
         "San fransisco",
         "Chicago",
         "New orleans"
     ]
-
-    if (items.length === 4)
-        return <><h1>List</h1><p>"empty list"</p></>;
+// let selectedIndex = 0;
+//hook
+  const [selectedIndex, setSelectedIndex] = useState(-1);
 
 
     return (
         <>
             <h1>List</h1>
-            <ul className="listGroup">
-                {items.map(item => <li key={item}>{item}</li>)}
-
-                {/* <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-                <li>item 4</li>  */}
+            {items.length === 0 && <p>No item found</p>}
+            <ul className="listGroup">               
+                {items.map((item, index) =>
+                    <li
+                        className={selectedIndex === index ? 'listGroup active' : 'listGroup'}
+                        key={item}
+                        onClick={() => { setSelectedIndex(index)}}
+                    >
+                        {item}
+                    </li>)}
             </ul>
         </>
     )

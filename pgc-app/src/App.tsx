@@ -1,13 +1,22 @@
 // go to this directory then npm run dev to launch it
 
 import ListGroup from "./components/ListGroup";
+import './App.css'
 
 // import { Fragment } from "react";
 
 function App() {
-  return <h1><ListGroup /></h1>;
+  return <div><ListGroup /></div>;
 
 }
+
+
+//This is for the solitiare set up picture generator
+// function App() {
+
+// }
+
+
 
 
 
