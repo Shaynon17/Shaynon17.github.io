@@ -6,7 +6,10 @@ import './App.css'
 // import { Fragment } from "react";
 
 function App() {
-  return <div><ListGroup /></div>;
+  let items = [ 'New york', "San fransisco", "Chicago", "New orleans"]
+  return <div>
+    <ListGroup items={items} heading="Cities"/>
+    </div>;
 
 }
 
