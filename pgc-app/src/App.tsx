@@ -1,23 +1,33 @@
 // go to this directory then npm run dev to launch it
 
 import ListGroup from "./components/ListGroup";
+import StoreListing from "./components/StoreListing";
 import './App.css'
 
 // import { Fragment } from "react";
 
-function App() {
-  let items = [ 'New york', "San fransisco", "Chicago", "New orleans"]
-  return <div>
-    <ListGroup items={items} heading="Cities"/>
-    </div>;
-
-}
 
 
-//This is for the solitiare set up picture generator
+
 // function App() {
+//   let items = [ 'New york', "San fransisco", "Chicago", "New orleans"]
+
+//   return <div>
+//     <ListGroup items={items} heading="Cities"/>
+//     </div>;
 
 // }
+
+
+// This is for my shop
+function App() {
+
+return <div>
+  <StoreListing title="Truth or Shot" button="Buy on Etsy" XReviews={1} review="Exactly what I was looking for! -Mary J." link='https://www.etsy.com/listing/1165642439/truth-or-shot-adult-drinking-game-to?etsrc=sdt' />
+</div>
+
+
+}
 
 
 
