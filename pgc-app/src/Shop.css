@@ -1,0 +1,48 @@
+.active {
+  color: red;
+}
+
+h1 {
+  color: red;
+}
+
+.imgSliderImages {
+  display: block; 
+}
+
+
+.imgSliderBtn {
+  all: unset;
+  display: flex;
+  /* position: absolute;
+  top: 0;
+  bottom: 0; */
+  padding: 5px;
+  cursor: pointer;
+/* transition: background-color 100ems ease-in-out; */
+}
+
+.imgSliderBtn > * {
+  stroke: red;
+  fill: black;
+}
+
+.imgSliderBtnLeft {
+  left: 0;
+}
+
+.imgSliderBtnRight {
+  right: 0;
+}
+
+.imgSliderBtn:hover {
+  background-color: red;
+}
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
