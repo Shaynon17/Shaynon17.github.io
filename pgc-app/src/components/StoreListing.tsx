@@ -1,8 +1,9 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 interface Props {
     title: string,
     button: string,
+    price: number,
     XReviews: number,
     review: string,
     link: string,
@@ -11,7 +12,6 @@ interface Props {
 
 
 function StoreListing(props: Props) {
-
 
 function numOfReviews(){
     {
@@ -26,14 +26,13 @@ function numOfReviews(){
 
 }
 
-
     return (
 
         <>
             {/* <p>pictures</p> */}
             <h2>{props.title}</h2>
             <a href={props.link} target="_blank" rel="noopener noreferrer">
-                <button>{props.button}</button>
+                <button>{props.button} ${props.price}</button>
             </a>
             {/* <p>(HALFFOFF applied through link)</p> */}
            
