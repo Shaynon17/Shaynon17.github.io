@@ -6,8 +6,9 @@ import './App.css'
 // import Alert from "./components/Alert";
 
 
-
-
+function App() { 
+return <h1>Hello</h1>
+}
 
 
 // function App() {
@@ -22,11 +23,11 @@ import './App.css'
 
 
 // This is for my shop
-function App() {
-return <div>
-  <StoreListing title="Truth or Shot" button="Buy on Etsy" price={1.99} XReviews={0} review="Exactly what I was looking for! -Mary J." link='https://www.etsy.com/listing/1165642439/truth-or-shot-adult-drinking-game-to?etsrc=sdt' />
-</div>
-}
+// function App() {
+// return <div>
+//   <StoreListing title="Truth or Shot" button="Buy on Etsy" price={1.99} XReviews={0} review="Exactly what I was looking for! -Mary J." link='https://www.etsy.com/listing/1165642439/truth-or-shot-adult-drinking-game-to?etsrc=sdt' />
+// </div>
+// }
 
 
 
