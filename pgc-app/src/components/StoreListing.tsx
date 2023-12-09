@@ -14,14 +14,30 @@ interface Props {
 
 function StoreListing(props: Props) {
 
+
+    let stars = <div>
+        <span className="fa fa-star checked"></span>
+        <span className="fa fa-star checked"></span>
+        <span className="fa fa-star checked"></span>
+        <span className="fa fa-star checked"></span>
+        <span className="fa fa-star-half-o"></span>
+    </div>
+
+
 function numOfReviews(){
     {
         if (props.XReviews === 0) {
-          return  <p>Leave the first review!</p>
+            return <p className="reviewNumberContainer" ><em>Leave the first review!</em></p>
         } else if (props.XReviews === 1) {
-           return <p>***** {props.XReviews} Review</p>
+           return <div className="reviewNumberContainer">
+           <p>{stars}</p>
+           <p>{props.XReviews} Review</p>
+           </div>
         } else {
-          return  <p>***** {props.XReviews} Reviews</p>
+            return <div className="reviewNumberContainer">
+                <p>{stars}</p>
+                <p>{props.XReviews} Reviews</p>
+            </div>
         }
     }
 
@@ -29,18 +45,18 @@ function numOfReviews(){
 
     return (
 
-        <>
+        <div className="productInfo">
             {/* <p>pictures</p> */}
             <h2>{props.title}</h2>
             <a href={props.link} target="_blank" rel="noopener noreferrer">
-                <button>{props.button} ${props.price}</button>
+                <button className="buyBtn" >{props.button} ${props.price}</button>
             </a>
             {/* <p>(HALFFOFF applied through link)</p> */}
            
            {numOfReviews()}
-            {props.review}
+            <p className="writtenReview" >{props.review}</p> 
 
-        </>
+        </div>
     )
 }
 

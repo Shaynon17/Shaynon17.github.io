@@ -29,9 +29,10 @@ function showPreviousImage() {
 
     return <div>
         <img className='imgSliderImages' src={imageUrls[imageIndex]} />
+        <div className="arrowBtns">
         <button onClick={showPreviousImage} className="imgSliderBtn imgSliderBtnLeft"><ArrowBigLeft /></button>
         <button onClick={showNextImage} className="imgSliderBtn imgSliderBtnRight"><ArrowBigRight /></button>
-
+        </div>
     </div>
 
 }

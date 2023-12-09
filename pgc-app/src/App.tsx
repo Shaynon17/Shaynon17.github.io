@@ -16,16 +16,15 @@ const Images = [pic1, pic2, pic3, pic4, pic5]
 function App() { 
 
     return (
-        <div className="ListingContainer">
-            {/* goal  */}
-            {/* <ImageSlider pic1="./assets/TestImageReact1.png" />  */}
+        <div className="shopContainer">
+        <div className="listingContainer">
             <ImageSlider imageUrls={Images} />
-            <StoreListing title="Truth or Shot" button="Buy on Etsy" price={1.99} XReviews={0} review="Exactly what I was looking for! -Mary J." link='https://www.etsy.com/listing/1165642439/truth-or-shot-adult-drinking-game-to?etsrc=sdt' />
+            <StoreListing title="Truth or Shot" button="Buy on Etsy" price={1.99} XReviews={1} review="Exactly what I was looking for! -Mary J." link='https://www.etsy.com/listing/1165642439/truth-or-shot-adult-drinking-game-to?etsrc=sdt' />
         </div>
+        </div>
+
     )
 }
-
-
 
 
 // This is for my shop
