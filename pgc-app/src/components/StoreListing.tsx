@@ -20,7 +20,7 @@ function StoreListing(props: Props) {
         <span className="fa fa-star checked"></span>
         <span className="fa fa-star checked"></span>
         <span className="fa fa-star checked"></span>
-        <span className="fa fa-star-half-o"></span>
+        <span className="fa fa-star checked"></span>
     </div>
 
 

@@ -99,9 +99,21 @@ html {
 
 
 
+.shopHeader {
+  margin-top: 85px;
+  text-align: center;
+}
+
+.shopHeader h2 {
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
 .shopContainer {
-  margin-top: 80px;
-  /* background: red; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+    display: flex;
+    margin-top: 20px;
   width: 90%;
   margin-left: 5%;
 }
@@ -109,23 +121,26 @@ html {
 
 
 .listingContainer {
-  /* background: lightgray; */
+  /* background-color: lightblue; */
+    background-color: #5acbf1;
+    margin: 10px;
+    border: 2px solid black;
   width: 25%;
   padding: 10px;
     max-width: 200px;
 }
 
-.active {
+/* .active {
   color: red;
 }
 
-h1 {
-  color: red;
-}
+*/
 
 .imgSliderImages {
-  display: block; 
+  display: flex; 
+  border: 2px solid black;
   width: 100%;
+  height: 200px;
 }
 
 
