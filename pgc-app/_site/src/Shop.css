@@ -1,0 +1,229 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-padding-top: 5rem;
+}
+
+.header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: block;
+  background-color: #101010;
+}
+
+.inner_header {
+  padding-left: 30px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+
+.logo_container {
+  height: 100%;
+  display: table;
+  float: left;
+}
+
+.logo_container h1 {
+  color: white;
+  height: 100%;
+  /* max-height: 80px; */
+  display: table-cell;
+  vertical-align: middle;
+  /* font-size: 32px; */
+  font-size: 3vw;
+  font-weight: 200;
+}
+
+.logo_container a {
+  color: white;
+}
+
+.logo_container a:hover {
+  /* font-size: 115%; */
+  opacity: 0.5;
+}
+
+.donate_button {
+  color: #65ff00;
+  padding: 2px 2px;
+  padding-right: 35px;
+}
+
+.logo_container h1 span {
+  font-weight: 800;
+}
+
+.navigation {
+  float: right;
+  height: 100%;
+}
+
+.navigation a {
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 20px;
+}
+
+.navigation a:last-child {
+  padding-right: 0;
+}
+
+.navigation a li {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  color: white;
+  /* font-size: 30px; */
+  font-size: 2vw;
+}
+
+.navigation a li:hover {
+  opacity: 0.5;
+}
+
+/* Above is the CSS for the header */
+
+
+
+.shopHeader {
+  margin-top: 85px;
+  text-align: center;
+}
+
+.shopHeader h2 {
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+.shopContainer {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+    display: flex;
+    margin-top: 20px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+
+
+.listingContainer {
+  /* background-color: lightblue; */
+    background-color: #5acbf1;
+    margin: 10px;
+    border: 2px solid black;
+  width: 25%;
+  padding: 10px;
+    max-width: 200px;
+}
+
+/* .active {
+  color: red;
+}
+
+*/
+
+.imgSliderImages {
+  display: flex; 
+  /* border: 2px solid black; */
+  width: 100%;
+  height: 200px;
+}
+
+
+.imgSliderBtn {
+  all: unset;
+  display: flex;
+
+  /* position: absolute;
+  top: 0;
+  bottom: 0; */
+  padding: 5px;
+  cursor: pointer;
+/* transition: background-color 100ems ease-in-out; */
+}
+
+.imgSliderBtn > * {
+  stroke: black;
+  fill: black;
+}
+
+
+.imgSliderBtn:hover {
+  background-color: #F1641E;
+}
+
+
+.arrowBtns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productInfo {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.buyBtn {
+margin: 4px;
+padding: 5px;
+padding-left: 10px;
+padding-right: 10px;
+color: white;
+font-weight: bold;
+background-color: #F1641E;
+border-radius: 15px;
+/* border: black; */
+}
+
+.buyBtn:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+/* .fa-star{
+  background-color: red;
+} */
+
+.checked {
+  color: black;
+}
+
+
+.reviewNumberContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.reviewNumberContainer p{
+  margin-left: 5px;
+}
+
+.writtenReview {
+  text-align: center;
+}
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+

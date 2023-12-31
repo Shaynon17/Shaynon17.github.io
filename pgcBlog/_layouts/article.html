@@ -6,37 +6,19 @@
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-    <title>HTML 5 Boilerplate</title>
-    <!-- <link rel="stylesheet" href="/pgcBlog/_site/assets/main.css"> -->
+    <title> {{ article.title }}</title>
+        <!-- <title> test</title> -->
+
+    <link rel="stylesheet" href="/pgcBlog/_site/assets/main.css">
 </head>
 
-<body>
-<!-- Below is the html for the header -->
-<div class="header">
-    <div class="inner_header">
-        <div class="logo_container">
-            <h1><a href="../index.html">Practical<span>GamingCenter</span></a></h1>
-
-        </div>
-        <ul class="navigation">
-            <a href="/index.html">
-                <li>Home</li>
-            </a>
-            <a href="/aztutorials.html">
-                <li>A-Z Tutorials</li>
-            </a>
-            <a rel="nofollow" target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=3R6SK3PHRWMT8">
-                <li><span class="donate_button">DONATE</span></li>
-            </a>
-        </ul>
-    </div>
-</div>
-<!-- Above is the html for the header -->
-
-
-    
-    <p>test: article.html</p>
+<body> 
+    {% include header.html %}
+  <h1>{{ page.title }}</h1> 
+ <!-- <p>-article.html-| Players: {{ page.players }} | Type: {{ page.type }} | Supplies: {{ page.supplies }} |</p> -->
     {{ content }}
+    {% include emailForm.html %}
+    {% include footer.html %}
 </body>
 
 </html>

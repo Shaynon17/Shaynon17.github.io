@@ -2,8 +2,11 @@
 layout: article
 title: "Testing articles layouts"
 categories: articles
-permalink: "/How-To-Play-:title"
+permalink: "/How-To-Play-/:title"
 ---
+
+
+testing december 30th
 
 Test post
 
