@@ -1,12 +1,9 @@
 * {
-text-decoration: none;
+    text-decoration: none;
 }
 
 footer {
     margin-bottom: 5px;
-}
-
-footer ul {
     text-align: center;
     font-size: 30px;
 }
@@ -16,35 +13,14 @@ footer li {
     padding: 0px 20px;
 }
 
+footer li:hover {
+    opacity: 0.5;
+}
+
 #footer_etsy {
     padding: 15px 10px;
 }
 
-#footer_etsy:hover {
-    opacity: 0.5;
-}
-
 #etsyStoreText {
     color: orangered;
-}
-
-
-.footer_donate {
-    color: #101010;
-    background-color: #65ff00;
-    padding: 5px 20px;
-    font-size: 30px;
-    border: 5px double;
-    border-radius: 50px;
-}
-
-.footer_donate:hover {
-    color: #65ff00;
-    background-color: #101010;
-    cursor: pointer;
-    /* border: #101010 5px double; */
-}
-
-#footer_contact:hover {
-    opacity: 0.5;
 }
