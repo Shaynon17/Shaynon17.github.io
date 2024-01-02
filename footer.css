@@ -3,7 +3,7 @@
 }
 
 footer {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     text-align: center;
     font-size: 30px;
 }
@@ -17,10 +17,7 @@ footer li:hover {
     opacity: 0.5;
 }
 
-#footer_etsy {
-    padding: 15px 10px;
-}
 
-#etsyStoreText {
+#etsy-store-text {
     color: orangered;
 }
