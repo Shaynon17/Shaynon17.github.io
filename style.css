@@ -27,7 +27,6 @@ html {
     height: 100%;
     display: block;
     margin: 0 auto;
-    /* background-color: red; */
 }
 .logo_container{
     height: 100%;
@@ -37,10 +36,8 @@ html {
 .logo_container h1 {
     color: white;
     height: 100%;
-    /* max-height: 80px; */
     display: table-cell;
     vertical-align: middle;
-    /* font-size: 32px; */
     font-size: 3vw;
     font-weight: 200;
 }
@@ -50,7 +47,6 @@ html {
 }
 
 .logo_container a:hover {
-    /* font-size: 115%; */
     opacity: 0.5;
 }
 
@@ -79,7 +75,6 @@ html {
     vertical-align: middle;
     height: 100%;
     color: white;
-    /* font-size: 30px; */
     font-size: 2vw;
 }
 
@@ -244,7 +239,6 @@ div.digital_gaming_center a:hover{
         /*DATA TABLE BELOW */
 .content_table {
     border-collapse: collapse;
-    /* border: 1px solid; */
     margin: 25px 0;
     font-size: 25px;
         min-width: 95%;
@@ -323,7 +317,6 @@ text-align: left;
 }
 
 .game figcaption {
-    /* height: auto; */
     width: 600px;
     text-align: center;
     margin: auto;
@@ -429,12 +422,9 @@ opacity: 0.5;
 .ninetyNine_scoreboard h3 {
     font-size: 25px;
     padding-top: 20px;
-    /* padding-bottom: 40px; */
 }
 
 #ninetyNine_countLabel{
-/* display: block;
-text-align: center; */
 font-size: 250px;
 padding-bottom: 100px;
 }
@@ -445,17 +435,6 @@ padding-bottom: 100px;
     font-size: 23px;
     border-radius: 12px;
 }
-
-/* .bg-blue {
-    background-color: #001f3f;
-    color: #ffffff;
-    margin-bottom: 1em;
-    padding: 1em 1.5em;
-}
-
-.text-large {
-    font-size: 2em;
-} */
 
 .kingsinthecorner_scoreboard {
 touch-action: manipulation;
@@ -543,7 +522,6 @@ max-width: 18%;
 
 .hero {
     width: 100%;
-    /* height: 10%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -558,7 +536,6 @@ max-width: 18%;
     font-size: 18px;
     border: #000;
     border-radius: 100px;
-    /* this is how rounded the edges are*/
 }
 
 .message_icon {
@@ -582,11 +559,6 @@ max-width: 18%;
 textarea {
     width: 100%;
         font-size: 25px;
-    /* border-top: none;
-    border-left: none;
-    border-right: none; */
-    /* border-bottom: 1px solid #000; */
-    /* outline: none; */
 }
 
 #input-field {
@@ -633,7 +605,6 @@ textarea {
 .email_subscribe_form form {
     background-color: lightgray;
     padding: 10px 10px;
-    /* box-shadow: 10px 10px 8px #888888 inset; */
         box-shadow: 10px 10px 8px #888888;
     border: 5px solid black;
 
@@ -664,14 +635,12 @@ font-size: 3vw;
 }
 
 .sub_form li {
-    /* padding-top: 10px; */
     display: table;
     float: left;
     padding-right: 3px;
     padding-left: 3px;
     font-size: 2vw;
-    /* border: 1px solid black; */
-                /* background-color: red; */
+   
 }
 
 
@@ -697,48 +666,55 @@ opacity: 0.5;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* CSS for the footer below */
 
-.footer ul {
-    /* list-style-type: none; */
-    margin: 0;
-    padding-top: 20px;
+footer {
+    margin-bottom: 5px;
+}
+
+footer ul {
     text-align: center;
-    overflow: hidden;
     font-size: 30px;
 }
 
-.footer li a {
-    display: inline-block;
-    min-width: none;
-}
-
-
-.footer a {
+footer li {
     height: 100%;
     display: inline-block;
     padding: 0px 20px;
 }
 
-
-
-.footer_etsy {
+#footer_etsy {
     color: orangered;
     padding: 15px 10px;
-    /* text-align: center; */
-    /* width: 30%; */
-    /* margin: auto */
-
 }
 
-.footer_etsy:hover {
-font-weight: bold;
-font-size: 95%;
+#footer_etsy:hover {
+    opacity: 0.5;
 }
 
+#etsyStoreText{
+    color: orangered;
+}
 
-
-.footer_donate {
+#footer_donate {
     color: #101010;
     background-color: #65ff00;;
     padding: 5px 20px;
@@ -747,23 +723,23 @@ font-size: 95%;
     border-radius: 50px;
 }
 
-.footer_donate:hover {
-    background-color: #101010;
+#donateBtnText {
+    color: #101010;
+}
+
+#footer_donate:hover {
     color: #65ff00;
+    background-color: #101010;
     border: #101010 solid 1px;
     cursor: pointer;
     border: 5px double;
 }
 
-.bottom_of_page {
-    padding-top: 30px;
-}
-
-.footer_contact:hover {
+#footer_contact:hover {
     opacity: 0.5;
 }
 
-/* Above is the CSS for the footer */
+/* CSS for the footer above */
 
 
 
