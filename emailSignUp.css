@@ -1,25 +1,20 @@
-/* .emailContainer {
-    background-color: green;
-} */
-
-.email_subscribe_form {
+.emailContainer {
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: red;
-    width: 100%;
-    /* padding-top: 20px; */
-    /* padding-bottom: 20px; */
+    margin: 12px;
 }
 
-.email_subscribe_form form {
+form {
+    display: flex;
+    justify-content: center;
     background-color: lightgray;
     padding-bottom: 5px;
     box-shadow: 10px 10px 8px #888888;
     border: 2px solid black;
+    max-width: 50%;
 }
 
-.sub_form h2 {
+form h2 {
     text-decoration: underline;
     display: flex;
     justify-content: center;
@@ -31,14 +26,19 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
-    /* background-color: #888888; */
 }
 
-.newsPaper img {
+/* .newsPaper img {
     height: 150px;
     width: 200px;
     max-width: 33%;
+} */
+
+.newsPaper img {
+    /* height: auto;
+    width: auto; */
+    /* max-height: 10%; */
+    max-width: 30%;
 }
 
 .sub_form p {
