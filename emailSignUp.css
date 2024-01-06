@@ -22,22 +22,12 @@ form h2 {
 }
 
 .newsPaper {
-    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-/* .newsPaper img {
-    height: 150px;
-    width: 200px;
-    max-width: 33%;
-} */
-
 .newsPaper img {
-    /* height: auto;
-    width: auto; */
-    /* max-height: 10%; */
     max-width: 30%;
 }
 
@@ -45,26 +35,34 @@ form h2 {
     font-size: 1.75vw;
 }
 
-.sub_form li {
-    display: table;
-    float: left;
-    padding-right: 3px;
-    padding-left: 3px;
-    font-size: 1.25vw;
+form ul {
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
+.sub_form li {
+    padding-right: 3px;
+    padding-left: 3px;
+    font-size: 1.5vw;
+}
 
+#signUpBtnLayout {
+    display: flex;
+    align-items: center;
+}
 
 #sign_up_btn {
     border: 2px black;
-    border-radius: 16px;
-    font-size: 1.25vw;
+    font-size: 1vw;
+    border-radius: 8px;
     padding: 3px 3px;
-    box-shadow: 5px 5px 8px #888888 inset;
+    box-shadow: 1px 1px 10px #888888 inset;
     border: 1px solid black;
 }
 
 #sign_up_btn:hover {
     cursor: pointer;
-    opacity: 0.5;
+    border-radius: 16px;
+    color:gray;
 }
