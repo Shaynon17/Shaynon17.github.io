@@ -593,8 +593,8 @@ textarea {
 
 
 /* CSS for the email subscribe form below */
-
-/* .email_subscribe_form {
+/* 
+.email_subscribe_form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -657,8 +657,8 @@ border: 1px solid black;
 #sign_up_btn:hover {
 cursor: pointer;
 opacity: 0.5;
-}
- */
+} */
+
 
 
 /* CSS for the email subscribe form Above */
