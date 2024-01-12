@@ -1,0 +1,23 @@
+* {
+    text-decoration: none;
+}
+
+footer {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+footer li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+footer li:hover {
+    opacity: 0.5;
+}
+
+
+#etsy-store-text {
+    color: orangered;
+}
