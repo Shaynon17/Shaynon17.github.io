@@ -1,7 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
 .emailContainer {
     display: flex;
     justify-content: center;
-    margin: 12px;
 }
 
 form {
@@ -39,6 +45,8 @@ form ul {
     display: inline-flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
 }
 
 .sub_form li {
@@ -56,7 +64,7 @@ form ul {
     border: 2px black;
     font-size: 1vw;
     border-radius: 8px;
-    padding: 3px 3px;
+    padding: 1.5px 3px;
     box-shadow: 1px 1px 10px #888888 inset;
     border: 1px solid black;
 }
