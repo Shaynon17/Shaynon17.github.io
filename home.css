@@ -1,0 +1,26 @@
+
+
+body {
+    background-color: #e7e9ec;
+}
+
+
+main {
+    margin-top: 60px;
+}
+
+section {
+    margin: 10px;
+}
+
+#homeYoutubeSection {
+    background-color: #ff0000;
+}
+
+#homeScoreboardSection {
+    background-color: #666769;
+}
+
+#homeOhShootSection {
+background-image: linear-gradient(to right, #cdffd8, #94b9ff);
+}
