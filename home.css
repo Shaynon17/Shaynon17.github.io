@@ -4,14 +4,45 @@ body {
     background-color: #e7e9ec;
 }
 
+.mainTitle {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
 
 main {
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 section {
     margin: 10px;
 }
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    padding-top: 10px;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.homeSection {
+background-color: green;
+width: 40%;
+padding: 20px;
+}
+
+
 
 #homeYoutubeSection {
     background-color: #ff0000;
