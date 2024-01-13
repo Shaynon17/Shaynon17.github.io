@@ -5,6 +5,10 @@
     text-decoration: none;
 }
 
+/* #homeTest {
+    display: none;
+} */
+
 /* This pads the a-z hyperlinks,
 making the nav bar not appear over the table heads when clicked */
 html {
