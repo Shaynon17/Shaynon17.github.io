@@ -1,0 +1,105 @@
+/* CSS for aztutorials.html page below */
+
+.aztutorials {
+    position: relative;
+    margin-top: 80px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.grow_the_library {
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+
+.aztutorials p {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+}
+
+.aztutorials h1 {
+    font-size: 45px;
+}
+
+.aztutorials h2 {
+    font-size: 40px;
+}
+
+.aztutorials h3 {
+    font-size: 35px;
+}
+
+.aztutorials li {
+    font-size: 25px;
+}
+
+
+#a-z_bar {
+    width: 100%;
+}
+
+
+/*DATA TABLE BELOW */
+.content_table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 25px;
+    min-width: 95%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content_table a:hover {
+    font-size: 125%;
+}
+
+.content_table th:first-child {
+    width: 0%;
+    font-size: 35px;
+}
+
+.content_table th:nth-child(2) {
+    width: 30%;
+    text-align: left;
+}
+
+.content_table td {
+    padding: 12px 15px;
+}
+
+.content_table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.table_head {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+}
+
+.table_letter {
+    font-weight: bold;
+}
+
+.hyper_linked_letters {
+    text-decoration: underline;
+}
+
+/*below is to make every other row gray */
+/* .content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+} */
+
+/* .content-table tbody tr:last-of-type{
+    border-bottom: 2px solid green;
+} */
+
+/*DATA TABLE ABOVE*/
+
+/* CSS for aztutorials.html page above*/
