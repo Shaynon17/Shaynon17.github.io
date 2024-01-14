@@ -14,8 +14,8 @@ h1 {
 
 main {
     margin-top: 60px;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 
@@ -37,20 +37,34 @@ p {
 }
 
 .homeSection {
-background-color: green;
+/* background-color: green; */
+border: solid 3px pink;
 width: 40%;
 padding: 20px;
 }
 
 
 
-#homeYoutubeSection {
+/* #homeYoutubeSection {
     background-color: #ff0000;
+} */
+
+#homeYoutubeSection p {
+    background-color: #ff0000;
+    padding: 20px;
+    border-radius: 25px;
 }
 
-#homeScoreboardSection {
+/* #homeScoreboardSection {
     background-color: #666769;
+} */
+
+#homeScoreboardSection div {
+    background-color: #666769;
+    padding: 20px;
+    border-radius: 25px;
 }
+
 
 #homeOhShootSection {
 background-image: linear-gradient(to right, #cdffd8, #94b9ff);
