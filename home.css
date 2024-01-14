@@ -31,28 +31,44 @@ section h2 {
 }
 
 p {
-    padding-top: 10px;
     font-size: 1.25rem;
     text-align: center;
 }
 
 .homeSection {
-/* background-color: green; */
-border: solid 3px pink;
+border: solid 1px black;
 width: 40%;
-padding: 20px;
 }
 
+#homeSetUpPic div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
+#homeSetUpPic p {
+    width: 45%;
+}
 
-/* #homeYoutubeSection {
-    background-color: #ff0000;
-} */
+#homeSetUpPic img {
+    width: 45%;
+    border: solid 1px black;
+}
+
+#homeYoutubeSection div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#homeYoutubeSection h2 {
+margin-left: 10px;
+}
 
 #homeYoutubeSection p {
     background-color: #ff0000;
-    padding: 20px;
     border-radius: 25px;
+    padding: 7px;
 }
 
 /* #homeScoreboardSection {
@@ -61,7 +77,7 @@ padding: 20px;
 
 #homeScoreboardSection div {
     background-color: #666769;
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 25px;
 }
 
