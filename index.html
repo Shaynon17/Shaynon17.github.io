@@ -84,7 +84,7 @@ open git and type: npx localview --port 5500
 
         <section class="homeSection" id="homeScoreboardSection">
             <h2>Custom Scoreboards for Each Game!</h2>
-            <div>
+            <div id="homeScoreboards" >
                 <p>Go paperless. Games that require pen and paper alternatively have custom scoreboards.</p>
                 <div id="player-1-scoreboard">
                 <label>Player 1</label>
@@ -94,7 +94,6 @@ open git and type: npx localview --port 5500
                 <button onclick="player1PlusOne()">+1</button>
                 <button onclick="player1MinusOne()">-1</button>
                 <button onclick="player1MinusFive()">-5</button>
-                </div>
                 <br>
                 <label>Player 2</label>
                 <input type="text" placeholder="Enter Name" />
@@ -105,8 +104,7 @@ open git and type: npx localview --port 5500
                 <button onclick="player2MinusFive()">-5</button>
                 <br>
                 <!-- <button onclick="resetNames()" >Reset Names</button> -->
-                <button onclick="resetScore()" >Reset Score</button>
-
+                <button id="resetButton" onclick="resetScore()" >Reset Score</button>
             </div>
         </section>
         </main>

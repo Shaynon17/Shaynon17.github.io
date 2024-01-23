@@ -43,21 +43,23 @@ h2 {
         font-size: 2.5vw;
 }
 
-.homeSection {
+/* .homeSection {
     border: solid 1px black;
-}
+} */
 
 #az-tutorials {
     grid-area: 2 / 1 / 3 / 2;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
 
 #homeSetUpPic {
     grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #homeSetUpPic div {
@@ -71,7 +73,7 @@ h2 {
 }
 
 #homeSetUpPic img {
-    width: 45%;
+    width: 25%;
     border: solid 1px black;
 }
 
@@ -105,6 +107,8 @@ margin-left: 10px;
     background-color: #ff0000;
     border-radius: 25px;
     padding: 10px;
+    width: 90%;
+    height: 90%;
 }
 
 
@@ -116,15 +120,34 @@ margin-left: 10px;
     grid-area: 3 / 2 / 4 / 3;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-#homeScoreboardSection div {
-    /* background-color: #666769; */
+#homeScoreboards {
+    background-color: #666769;
+    width: 90%;
+    margin-left: 5%;
+    height: 90%;
     border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+#homeScoreboards p {
+    color: white;
+    margin-bottom: 10px;
+    margin-top: -10px;
 }
 
 #player-1-scoreboard {
-    color: red;
+    color: white;
+}
+
+#homeScoreboards button {
+    border-radius: 7px;
+    padding: 2px 5px;
 }
 
 
@@ -142,6 +165,7 @@ margin-left: 10px;
         padding: 10px;
         background-image: linear-gradient(to right, #cdffd8, #94b9ff);
     border-radius: 25px;
+        border: solid 2px black;
     }
     
 #oh-shoot-center {

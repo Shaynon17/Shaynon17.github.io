@@ -5,9 +5,9 @@
     text-decoration: none;
 }
 
-ul:nth-child(2) {
+/* :nth-child(2) {
     color: red;
-}
+} */
 
 /* input[type=text],
 select,
@@ -61,6 +61,7 @@ form ul {
     list-style: none;
     padding: 0;
 }
+
 
 .sub_form li {
     padding-right: 3px;
