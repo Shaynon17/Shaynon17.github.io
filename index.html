@@ -68,12 +68,13 @@ open git and type: npx localview --port 5500
             <div>
                 <p>Set-up pictures reduce confusion when setting up a game, so you can dive right into enjoying yourself</p>
                 <img src="images\HomePageSetUpExample.png" alt="">
-                </div>
+            </div>
         </section>
 
         <section class="homeSection" id="homeYoutubeSection">
             <div>
-            <a href="https://www.youtube.com/@practicalgamingcenter" target="_blank"><i class="fa fa-youtube-play" style="font-size:48px;color:red"></i></a>
+            <a><img src="/homePageImages/YouTubeLogoForSite.png"></a>
+            <!-- <a href="https://www.youtube.com/@practicalgamingcenter" target="_blank"><i class="fa fa-youtube-play" style="font-size:48px;color:red"></i></a> -->
             <h2>Video Tutorials Available</h2>
             </div>
             <p>When you see a YouTube logo in the index, there is a video tutorial for that game. You can click the logo to go
@@ -85,6 +86,7 @@ open git and type: npx localview --port 5500
             <h2>Custom Scoreboards for Each Game!</h2>
             <div>
                 <p>Go paperless. Games that require pen and paper alternatively have custom scoreboards.</p>
+                <div id="player-1-scoreboard">
                 <label>Player 1</label>
                 <input type="text" placeholder="Enter Name" />
                 <label id="playerOneScore">0</label>
@@ -92,6 +94,7 @@ open git and type: npx localview --port 5500
                 <button onclick="player1PlusOne()">+1</button>
                 <button onclick="player1MinusOne()">-1</button>
                 <button onclick="player1MinusFive()">-5</button>
+                </div>
                 <br>
                 <label>Player 2</label>
                 <input type="text" placeholder="Enter Name" />
