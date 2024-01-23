@@ -54,6 +54,12 @@ h2 {
     justify-content: center;
 }
 
+#az-tutorials p {
+    width: 90%;
+    margin-left: 5%;
+    align-content: center;
+}
+
 
 #homeSetUpPic {
     grid-area: 2 / 2 / 3 / 3;
@@ -65,7 +71,7 @@ h2 {
 #homeSetUpPic div {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 #homeSetUpPic p {
@@ -73,6 +79,7 @@ h2 {
 }
 
 #homeSetUpPic img {
+    margin-left: 2%;
     width: 25%;
     border: solid 1px black;
 }
@@ -105,6 +112,7 @@ margin-left: 10px;
 
 #homeYoutubeSection p {
     background-color: #ff0000;
+    color: white;
     border-radius: 25px;
     padding: 10px;
     width: 90%;
@@ -129,9 +137,6 @@ margin-left: 10px;
     margin-left: 5%;
     height: 90%;
     border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 10px;
 }
 
@@ -141,14 +146,32 @@ margin-left: 10px;
     margin-top: -10px;
 }
 
-#player-1-scoreboard {
+#player-1-2-scoreboard {
     color: white;
+    text-align: center;
 }
 
-#homeScoreboards button {
+.scoreboardButtons {
     border-radius: 7px;
-    padding: 2px 5px;
+        padding: 2px 5px;
+        font-size: 1.25vw;
+    }
+
+
+/* #homeScoreboards button {
+
+} */
+
+#homeScoreboards label {
+        font-size: 1.5vw;
+    }
+
+#resetButton {
+    border-radius: 7px;
+    padding: 2px 20px;
+    font-size: 1vw;
 }
+
 
 
 
@@ -184,15 +207,15 @@ margin-left: 10px;
 
 .oh-shoot-cards {
     margin-top: 10px;
-        width: 22%;
+        width: 21%;
     }
     
 .oh-shoot-hands {
-    width: 20%;
-    height: 90%;
+    max-width: 20%;
+    height: 80%;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 815px) {
     main {
         display: flex;
         flex-direction: column;
@@ -204,10 +227,20 @@ margin-left: 10px;
         width: 100px;
     }
 
+        #homeScoreboards p {
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+
 #homeOhShootSection {
     display: flex;
     width: 76%;
     margin-left: 10%;
-    height: 150px;
+    max-height: 150px;
+}
+
+.oh-shoot-hands {
+    max-width: 15%;
+    max-height: 80%;
 }
 }

@@ -86,25 +86,26 @@ open git and type: npx localview --port 5500
             <h2>Custom Scoreboards for Each Game!</h2>
             <div id="homeScoreboards" >
                 <p>Go paperless. Games that require pen and paper alternatively have custom scoreboards.</p>
-                <div id="player-1-scoreboard">
+                <div id="player-1-2-scoreboard">
                 <label>Player 1</label>
                 <input type="text" placeholder="Enter Name" />
                 <label id="playerOneScore">0</label>
-                <button onclick="player1PlusFive()">+5</button>
-                <button onclick="player1PlusOne()">+1</button>
-                <button onclick="player1MinusOne()">-1</button>
-                <button onclick="player1MinusFive()">-5</button>
+                <button class="scoreboardButtons" onclick="player1PlusFive()">+5</button>
+                <button class="scoreboardButtons" onclick="player1PlusOne()">+1</button>
+                <button class="scoreboardButtons" onclick="player1MinusOne()">-1</button>
+                <button class="scoreboardButtons" onclick="player1MinusFive()">-5</button>
                 <br>
                 <label>Player 2</label>
                 <input type="text" placeholder="Enter Name" />
                 <label id="playerTwoScore">0</label>
-                <button onclick="player2PlusFive()">+5</button>
-                <button onclick="player2PlusOne()">+1</button>
-                <button onclick="player2MinusOne()">-1</button>
-                <button onclick="player2MinusFive()">-5</button>
+                <button class="scoreboardButtons" onclick="player2PlusFive()">+5</button>
+                <button class="scoreboardButtons" onclick="player2PlusOne()">+1</button>
+                <button class="scoreboardButtons" onclick="player2MinusOne()">-1</button>
+                <button class="scoreboardButtons" onclick="player2MinusFive()">-5</button>
                 <br>
                 <!-- <button onclick="resetNames()" >Reset Names</button> -->
                 <button id="resetButton" onclick="resetScore()" >Reset Score</button>
+                </div>
             </div>
         </section>
         </main>
