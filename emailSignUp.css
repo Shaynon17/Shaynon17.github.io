@@ -55,32 +55,30 @@ form h2 {
 }
 
 form ul {
-    display: inline-flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
+    /* display: inline-flex;
+    flex-wrap: wrap; */
+        text-align: center;
 }
-
 
 .sub_form li {
-    padding-right: 3px;
-    padding-left: 3px;
     font-size: 1.5vw;
+    margin-left: 3px;
 }
 
-#signUpBtnLayout {
-    display: flex;
-    align-items: center;
+.inputBox {
+    font-size: 1vw;
 }
 
 #sign_up_btn {
-    border: 2px black;
     font-size: 1vw;
+    border: 2px black;
     border-radius: 8px;
-    padding: 1.5px 3px;
+    padding: 3px 3px;
     box-shadow: 1px 1px 10px #888888 inset;
     border: 1px solid black;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 5px;
 }
 
 #sign_up_btn:hover {

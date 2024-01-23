@@ -157,22 +157,20 @@ margin-left: 10px;
         font-size: 1.25vw;
     }
 
-
-/* #homeScoreboards button {
-
-} */
-
 #homeScoreboards label {
         font-size: 1.5vw;
-    }
+        }
+        
+        .scoreboardInput {
+font-size: 1.5vw;
+}
 
 #resetButton {
+    margin-top: 1%;
     border-radius: 7px;
     padding: 2px 20px;
     font-size: 1vw;
 }
-
-
 
 
 
@@ -232,14 +230,14 @@ margin-left: 10px;
             margin-top: 5px;
         }
 
-#homeOhShootSection {
+        #homeOhShootSection {
     display: flex;
     width: 76%;
     margin-left: 10%;
     max-height: 150px;
-}
+    }
 
-.oh-shoot-hands {
+        .oh-shoot-hands {
     max-width: 15%;
     max-height: 80%;
 }

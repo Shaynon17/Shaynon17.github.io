@@ -88,7 +88,7 @@ open git and type: npx localview --port 5500
                 <p>Go paperless. Games that require pen and paper alternatively have custom scoreboards.</p>
                 <div id="player-1-2-scoreboard">
                 <label>Player 1</label>
-                <input type="text" placeholder="Enter Name" />
+                <input class="scoreboardInput" type="text" placeholder="Enter Name" />
                 <label id="playerOneScore">0</label>
                 <button class="scoreboardButtons" onclick="player1PlusFive()">+5</button>
                 <button class="scoreboardButtons" onclick="player1PlusOne()">+1</button>
@@ -96,7 +96,7 @@ open git and type: npx localview --port 5500
                 <button class="scoreboardButtons" onclick="player1MinusFive()">-5</button>
                 <br>
                 <label>Player 2</label>
-                <input type="text" placeholder="Enter Name" />
+                <input class="scoreboardInput" type="text" placeholder="Enter Name" />
                 <label id="playerTwoScore">0</label>
                 <button class="scoreboardButtons" onclick="player2PlusFive()">+5</button>
                 <button class="scoreboardButtons" onclick="player2PlusOne()">+1</button>
@@ -144,9 +144,9 @@ open git and type: npx localview --port 5500
                     <li>
                         <div class="mc-field-group">
                             <label for="mce-EMAIL">
-                                Email Address:
+                                Email:
                             </label>
-                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+                            <input type="email" value="" name="EMAIL" class="required email, inputBox" id="mce-EMAIL" required>
                         </div>
                     </li>
                     <li>
@@ -159,17 +159,15 @@ open git and type: npx localview --port 5500
                     <li>
                         <div class="mc-field-group">
                             <label for="mce-FNAME">
-                                First Name:
+                                Name:
                             </label>
-                            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                            <input type="text" value="" name="FNAME" class="inputBox" id="mce-FNAME">
                             <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
                         </div>
                     </li>
-                    <li>
-                        <input id="sign_up_btn" type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button">
-                    </li>
                     </div>
                 </ul>
+                <input id="sign_up_btn" type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button">
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
                         name="b_0dd659d664538ef51a08b0fc1_71e50d986f" tabindex="-1" value=""></div>
