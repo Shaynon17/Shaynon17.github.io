@@ -5,6 +5,18 @@
     text-decoration: none;
 }
 
+ul:nth-child(2) {
+    color: red;
+}
+
+/* input[type=text],
+select,
+textarea {
+    width: 100%;
+    resize: vertical;
+} */
+
+
 .emailContainer {
     margin-top: 10px;
     display: flex;
