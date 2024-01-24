@@ -29,7 +29,7 @@
 }
 
 #rulesBox p {
-    font-size: 1em;
+    font-size: 1.5vw;
 }
 
 
@@ -68,12 +68,12 @@
 }
 
 #ruleSectionRight h1 {
-    font-size: 25px;
+    font-size: 2.25vw;
     text-align: center;
 }
 
 #ruleSectionRight h2 {
-    font-size: 20px;
+    font-size: 2vw;
 }
 
 .rulesSRCards {
@@ -186,17 +186,18 @@
 
 .movesMade {
     margin-top: 5px;
-    font-size: 20px;
+    font-size: 2vw;
 }
 
 .modeButtons {
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 2%;
     border-radius: 30%;
     padding: 5px;
     background-color: grey;
     color: white;
-    font-size: 15px;
+    font-size: 1.5vw;
     border: 2px solid black;
 }
 
@@ -229,7 +230,7 @@ padding: 5px 7px;
 } */
 
 .comments {
-    font-size: 20px;
+    font-size: 2vw;
 }
 
 .mainEnemy {
@@ -260,11 +261,11 @@ padding: 5px 7px;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 .playerEnemyChoice {
-    font-size: 20px;
+    font-size: 2.5vw;
 }
 
 
