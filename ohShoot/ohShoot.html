@@ -3,38 +3,28 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="ohShoot.css">
+    <link rel="stylesheet" type="text/css" href="/styleSheets/header.css">
+
     <title>Practical Gaming Center</title>
     <script src="ohShoot.js"></script>
 </head>
 
 <body id="gradient">
     <!-- Below is the html for the header -->
-    <div class="header">
-        <div class="inner_header">
-            <div class="logo_container">
-                <h1>Practical<span>GamingCenter</span></h1>
-
-            </div>
-            <ul class="navigation">
-                <a href="index.html">
-                    <!-- <li>Home</li> -->
-                </a>
-                <a href="aztutorials.html">
-                    <!-- <li>A-Z Tutorials</li> -->
-                </a>
-                <a rel="nofollow" target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=3R6SK3PHRWMT8">
-                    <li><span class="donate_button"></span></li>
-                </a>
-                <li></li>
-                <!-- <a href="shop.html">
-                    <li>Shop</li>
-                </a> -->
+    <header>
+        <p class="site-name">PracticalGamingCenter</p>
+        <nav>
+            <ul>
+                <li id="header-az-tutorials"><a href="aztutorials.html">A-Z Tutorials</a></li>
+                <li id="header-home"><a href="index.html">Home</a></li>
+                <li id="header-tools"><a href="tools.html">Tools</a></li>
+                <li id="header-contact"><a href="contact.html">Contact</a></li>
+                <li id="header-shop"><a href="shop.html">Shop</a></li>
             </ul>
-        </div>
-    </div>
-
+        </nav>
+    </header>
     <!-- ////////// Above is the HTML for the header \\\\\\\\\\\\ -->
-    <div id="delete">
+    <div id="original-labels">
         <!-- deleting this breaks the game-->
         <p>Current Mode: <span id="mode">Easy</span></p>
         <p> <!-- deleting these also break the game-->
@@ -70,34 +60,34 @@ mainEnemy
             <div class="ruleSectionLeftBoxs">
                 <p>Each hand shows each players choice. <br>
                     You are blue, the enemy is red.</p>
-                <img src="./images/LeftReload.png">
+                <img src="ohShootPictures/LeftReload.png">
             </div>
             <div class="ruleSectionLeftBoxs">
                 <p>The bullets under "You" represent <br>
                     how many bullets you have unloaded</p>
-                <img src="./images/LeftBullet7.png">
+                <img src="ohShootPictures/LeftBullet7.png">
             </div>
             <div class="ruleSectionLeftBoxs">
                 <p>This cylinder represents<br>
                     you are loaded</p>
-                <img src="./images/LeftCylinderLoaded.png">
+                <img src="ohShootPictures/LeftCylinderLoaded.png">
             </div>
             <div class="ruleSectionLeftBoxs">
                 <p>This cylinder represents<br>
                     you are not loaded</p>
-                <img src="./images/BlankCylinder.png">
+                <img src="ohShootPictures/BlankCylinder.png">
             </div>
 
         </div>
 
-        <!-- bellow is right rules section  -->
+        <!-- bellow is rules section  -->
         <div id="ruleSectionRight">
 
             <h1>Easy Rules</h1>
 
             <div class="rulesSRCards">
-                <h2 class="test"> Objective</h2>
-                <p class="test">- Each player starts with 5 unloaded bullets. <br>
+                <h2> Objective</h2>
+                <p>- Each player starts with 5 unloaded bullets. <br>
                     - The first player to have all 10 bullets wins.<br>
                     - Bullets represent your score, and get exchanged between players as the game progresses.
                 </p>
@@ -139,10 +129,10 @@ mainEnemy
 
             <div id="rulesPlayerCards">
                 <h2>Click on a card<br>to select your action</h2>
-                <img src="./images/playerShootCard.png">
-                <img src="./images/playerReloadCard.png">
-                <img src="./images/playerBlockCard.png">
-                <img src="./images/playerPunchCard.png">
+                <img src="ohShootPictures/playerShootCard.png">
+                <img src="ohShootPictures/playerReloadCard.png">
+                <img src="ohShootPictures/playerBlockCard.png">
+                <img src="ohShootPictures/playerPunchCard.png">
             </div>
 
 
@@ -151,13 +141,13 @@ mainEnemy
     </div>
 
     <div id="main">
-        <img class="mainYourCard" id="leftHand" src="./images/leftHandBlank.png">
+        <img class="mainYourCard" id="leftHand" src="ohShootPictures/leftHandBlank.png">
 
         <!-- Player Card Below -->
         <div class="mainYou">
             <h2>You</h2>
-            <img id="leftBullet" src="./images/LeftBullet5.png">
-            <img id="leftCylinder" src="./images/BlankCylinder.png">
+            <img id="leftBullet" src="ohShootPictures/LeftBullet5.png">
+            <img id="leftCylinder" src="ohShootPictures/BlankCylinder.png">
 
             <label class="playerEnemyChoice" id="playerChoice">Pick Your Card</label>
 
@@ -180,23 +170,23 @@ mainEnemy
         <!-- Enemy Card -->
         <div class="mainEnemy">
             <h2>Enemy</h2>
-            <img id="rightBullet" src="./images/LeftBullet5.png">
-            <img id="rightCylinder" src="./images/BlankCylinder.png">
+            <img id="rightBullet" src="ohShootPictures/LeftBullet5.png">
+            <img id="rightCylinder" src="ohShootPictures/BlankCylinder.png">
 
             <label class="playerEnemyChoice" id="enemyAction">...</label>
             <!-- <p class="loadedHolster" > -->
         </div>
-        <img class="mainEnemyCard" id="rightHand" src="./images/rightHandBlank.png">
+        <img class="mainEnemyCard" id="rightHand" src="ohShootPictures/rightHandBlank.png">
 
 
     </div>
     <!-- ///////////////////////// below are the action cards ///////////////////////// -->
 
     <div id="playerCards">
-        <img class="actionCard" onclick="shoot()" src="./images/playerShootCard.png">
-        <img class="actionCard" onclick="reload()" src="./images/playerReloadCard.png">
-        <img class="actionCard" onclick="block()" src="./images/playerBlockCard.png">
-        <img class="actionCard" onclick="punch()" src="./images/playerPunchCard.png">
+        <img class="actionCard" onclick="shoot()" src="ohShootPictures/playerShootCard.png">
+        <img class="actionCard" onclick="reload()" src="ohShootPictures/playerReloadCard.png">
+        <img class="actionCard" onclick="block()" src="ohShootPictures/playerBlockCard.png">
+        <img class="actionCard" onclick="punch()" src="ohShootPictures/playerPunchCard.png">
     </div>
 
 </body>

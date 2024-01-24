@@ -32,12 +32,12 @@ function resetEasy() {
         gameMode.difficulty = "Easy"; //-----------------
     gameMode.lastEnemyChoice = '';
     gameMode.lastPlayerChoice = '';
-    document.getElementById('leftHand').src = "./images/leftHandBlank.png";
-    document.getElementById('rightHand').src = "./images/rightHandBlank.png";
-    document.getElementById("leftBullet").src = "./images/LeftBullet5.png";
-    document.getElementById("leftCylinder").src = "./images/BlankCylinder.png";
-    document.getElementById("rightBullet").src = "./images/RightBullet5.png";
-    document.getElementById("rightCylinder").src = "./images/BlankCylinder.png";
+    document.getElementById('leftHand').src = "ohShootPictures/leftHandBlank.png";
+    document.getElementById('rightHand').src = "ohShootPictures/rightHandBlank.png";
+    document.getElementById("leftBullet").src = "ohShootPictures/LeftBullet5.png";
+    document.getElementById("leftCylinder").src = "ohShootPictures/BlankCylinder.png";
+    document.getElementById("rightBullet").src = "ohShootPictures/RightBullet5.png";
+    document.getElementById("rightCylinder").src = "ohShootPictures/BlankCylinder.png";
     document.getElementById("enemyAction").innerHTML = '...';
     document.getElementById("playerChoice").innerHTML = 'Pick Your Card';
     document.getElementById("playerLoaded").innerHTML = 0;
@@ -194,13 +194,13 @@ const fixEnemyActionShoot = () => {
 
 const changeRightHand = () => {
     if (gameMode.lastEnemyChoice === "block") {
-        document.getElementById('rightHand').src = "./images/RightBlock.png";
+        document.getElementById('rightHand').src = "ohShootPictures/RightBlock.png";
     } else if (gameMode.lastEnemyChoice === "punch") {
-        document.getElementById('rightHand').src = "./images/RightPunch.png";
+        document.getElementById('rightHand').src = "ohShootPictures/RightPunch.png";
     } else if (gameMode.lastEnemyChoice === "shoot") {
-        document.getElementById('rightHand').src = "./images/RightShoot.png";
+        document.getElementById('rightHand').src = "ohShootPictures/RightShoot.png";
     } else if (gameMode.lastEnemyChoice === "reload") {
-        document.getElementById('rightHand').src = "./images/RightReload.png";
+        document.getElementById('rightHand').src = "ohShootPictures/RightReload.png";
     }
 
 }
@@ -215,66 +215,66 @@ const mediumToNormal = () => {
 
 const leftCylinder = () => {
     if (player.loaded === 0) {
-        document.getElementById("leftCylinder").src = "./images/BlankCylinder.png";
+        document.getElementById("leftCylinder").src = "ohShootPictures/BlankCylinder.png";
     } else if (player.loaded === 1) {
-        document.getElementById("leftCylinder").src = "./images/LeftCylinderLoaded.png";
+        document.getElementById("leftCylinder").src = "ohShootPictures/LeftCylinderLoaded.png";
     }
 }
 
 const rightCylinder = () => {
     if (enemy.loaded === 0) {
-        document.getElementById("rightCylinder").src = "./images/BlankCylinder.png";
+        document.getElementById("rightCylinder").src = "ohShootPictures/BlankCylinder.png";
     } else if (enemy.loaded === 1) {
-        document.getElementById("rightCylinder").src = "./images/RightCylinderLoaded.png";
+        document.getElementById("rightCylinder").src = "ohShootPictures/RightCylinderLoaded.png";
     }
 }
 
 
 const leftBullets = () => {
     if (player.holster === 0) {
-        document.getElementById("leftBullet").src = "./images/NoBullet.png";
+        document.getElementById("leftBullet").src = "ohShootPictures/NoBullet.png";
     } else if (player.holster === 1) {
-        document.getElementById("leftBullet").src = "./images/LeftBullet1.png";
+        document.getElementById("leftBullet").src = "ohShootPictures/LeftBullet1.png";
     } else if (player.holster === 2) {
-        document.getElementById("leftBullet").src = "./images/LeftBullet2.png";
+        document.getElementById("leftBullet").src = "ohShootPictures/LeftBullet2.png";
     } else if (player.holster === 3) {
-        document.getElementById("leftBullet").src = "./images/LeftBullet3.png";
+        document.getElementById("leftBullet").src = "ohShootPictures/LeftBullet3.png";
     } else if (player.holster === 4) {
-        document.getElementById("leftBullet").src = "./images/LeftBullet4.png";
+        document.getElementById("leftBullet").src = "ohShootPictures/LeftBullet4.png";
     } else if (player.holster === 5) {
-        document.getElementById("leftBullet").src = "./images/LeftBullet5.png";
+        document.getElementById("leftBullet").src = "ohShootPictures/LeftBullet5.png";
     } else if (player.holster === 6) {
-        document.getElementById("leftBullet").src = "./images/LeftBullet6.png";
+        document.getElementById("leftBullet").src = "ohShootPictures/LeftBullet6.png";
     } else if (player.holster === 7) {
-        document.getElementById("leftBullet").src = "./images/LeftBullet7.png";
+        document.getElementById("leftBullet").src = "ohShootPictures/LeftBullet7.png";
     } else if (player.holster === 8) {
-        document.getElementById("leftBullet").src = "./images/LeftBullet8.png";
+        document.getElementById("leftBullet").src = "ohShootPictures/LeftBullet8.png";
     } else if (player.holster === 9) {
-        document.getElementById("leftBullet").src = "./images/LeftBullet9.png";
+        document.getElementById("leftBullet").src = "ohShootPictures/LeftBullet9.png";
     }
 }
 
 const rightBullets = () => {
     if (enemy.holster === 0) {
-        document.getElementById("rightBullet").src = "./images/NoBullet.png";
+        document.getElementById("rightBullet").src = "ohShootPictures/NoBullet.png";
     } else if (enemy.holster === 1) {
-        document.getElementById("rightBullet").src = "./images/RightBullet1.png";
+        document.getElementById("rightBullet").src = "ohShootPictures/RightBullet1.png";
     } else if (enemy.holster === 2) {
-        document.getElementById("rightBullet").src = "./images/RightBullet2.png";
+        document.getElementById("rightBullet").src = "ohShootPictures/RightBullet2.png";
     } else if (enemy.holster === 3) {
-        document.getElementById("rightBullet").src = "./images/RightBullet3.png";
+        document.getElementById("rightBullet").src = "ohShootPictures/RightBullet3.png";
     } else if (enemy.holster === 4) {
-        document.getElementById("rightBullet").src = "./images/RightBullet4.png";
+        document.getElementById("rightBullet").src = "ohShootPictures/RightBullet4.png";
     } else if (enemy.holster === 5) {
-        document.getElementById("rightBullet").src = "./images/RightBullet5.png";
+        document.getElementById("rightBullet").src = "ohShootPictures/RightBullet5.png";
     } else if (enemy.holster === 6) {
-        document.getElementById("rightBullet").src = "./images/RightBullet6.png";
+        document.getElementById("rightBullet").src = "ohShootPictures/RightBullet6.png";
     } else if (enemy.holster === 7) {
-        document.getElementById("rightBullet").src = "./images/RightBullet7.png";
+        document.getElementById("rightBullet").src = "ohShootPictures/RightBullet7.png";
     } else if (enemy.holster === 8) {
-        document.getElementById("rightBullet").src = "./images/RightBullet8.png";
+        document.getElementById("rightBullet").src = "ohShootPictures/RightBullet8.png";
     } else if (enemy.holster === 9) {
-        document.getElementById("rightBullet").src = "./images/RightBullet9.png";
+        document.getElementById("rightBullet").src = "ohShootPictures/RightBullet9.png";
     }
 }
 
@@ -500,12 +500,12 @@ function resetMedium() {
         gameMode.difficulty = "Medium";
     gameMode.lastEnemyChoice = '';
     gameMode.lastPlayerChoice = '';
-    document.getElementById('leftHand').src = "./images/leftHandBlank.png";
-    document.getElementById('rightHand').src = "./images/rightHandBlank.png";
-    document.getElementById("leftBullet").src = "./images/LeftBullet4.png";
-    document.getElementById("leftCylinder").src = "./images/LeftCylinderLoaded.png";
-    document.getElementById("rightBullet").src = "./images/RightBullet4.png";
-    document.getElementById("rightCylinder").src = "./images/RightCylinderLoaded.png";
+    document.getElementById('leftHand').src = "ohShootPictures/leftHandBlank.png";
+    document.getElementById('rightHand').src = "ohShootPictures/rightHandBlank.png";
+    document.getElementById("leftBullet").src = "ohShootPictures/LeftBullet4.png";
+    document.getElementById("leftCylinder").src = "ohShootPictures/LeftCylinderLoaded.png";
+    document.getElementById("rightBullet").src = "ohShootPictures/RightBullet4.png";
+    document.getElementById("rightCylinder").src = "ohShootPictures/RightCylinderLoaded.png";
     document.getElementById("enemyAction").innerHTML = '...';
     document.getElementById("playerChoice").innerHTML = 'Pick Your Card';
     document.getElementById("playerLoaded").innerHTML = player.loaded;
@@ -524,7 +524,7 @@ function resetMedium() {
 
 
 const reload = () => {
-    document.getElementById('leftHand').src = "./images/LeftReload.png";
+    document.getElementById('leftHand').src = "ohShootPictures/LeftReload.png";
     gameMode.moves += 1;
     if (gameMode.difficulty === "Easy") {
         reloadEasy()
@@ -574,7 +574,7 @@ const reloadMedium = () => {
 
 
 const block = () => {
-    document.getElementById('leftHand').src = "./images/LeftBlock.png";
+    document.getElementById('leftHand').src = "ohShootPictures/LeftBlock.png";
     gameMode.moves += 1;
     if (gameMode.difficulty === "Easy") {
         blockEasy()
@@ -609,7 +609,7 @@ const blockMedium = () => {
 
 
 const punch = () => {
-    document.getElementById('leftHand').src = "./images/LeftPunch.png";
+    document.getElementById('leftHand').src = "ohShootPictures/LeftPunch.png";
     gameMode.moves += 1;
     if (gameMode.difficulty === "Easy") {
         punchEasy()
@@ -700,7 +700,7 @@ const shootMedium = () => {
 }
 
 const shoot = () => {
-    document.getElementById('leftHand').src = "./images/leftShoot.png";
+    document.getElementById('leftHand').src = "ohShootPictures/leftShoot.png";
     gameMode.moves += 1;
     if (gameMode.difficulty === "Easy") {
         shootEasy();
