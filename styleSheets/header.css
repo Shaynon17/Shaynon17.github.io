@@ -3,6 +3,11 @@
     text-decoration: none;
 }
 
+/* Remove parts of the navigation bar until further notice */
+#header-tools, #header-shop {
+    display: none
+}
+
 header {
     display: flex;
     align-items: center;
