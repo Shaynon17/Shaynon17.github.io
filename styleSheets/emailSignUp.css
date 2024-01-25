@@ -5,25 +5,14 @@
     text-decoration: none;
 }
 
-/* :nth-child(2) {
-    color: red;
-} */
 
-/* input[type=text],
-select,
-textarea {
-    width: 100%;
-    resize: vertical;
-} */
-
-
-.emailContainer {
+.email-container {
     margin-top: 10px;
     display: flex;
     justify-content: center;
 }
 
-form {
+.sub-form {
     display: flex;
     justify-content: center;
     background-color: lightgray;
@@ -33,7 +22,7 @@ form {
     max-width: 50%;
 }
 
-form h2 {
+.sub-form h2 {
     text-decoration: underline;
     display: flex;
     justify-content: center;
@@ -50,26 +39,24 @@ form h2 {
     max-width: 30%;
 }
 
-.sub_form p {
+.sub-form p {
     font-size: 1.75vw;
 }
 
-form ul {
-    /* display: inline-flex;
-    flex-wrap: wrap; */
+.sub-form ul {
         text-align: center;
 }
 
-.sub_form li {
+.sub-form li {
     font-size: 1.5vw;
     margin-left: 3px;
 }
 
-.inputBox {
+.input-box {
     font-size: 1vw;
 }
 
-#sign_up_btn {
+#sign-up-btn {
     font-size: 1vw;
     border: 2px black;
     border-radius: 8px;
@@ -81,7 +68,7 @@ form ul {
     margin-top: 5px;
 }
 
-#sign_up_btn:hover {
+#sign-up-btn:hover {
     cursor: pointer;
     border-radius: 16px;
     color:gray;

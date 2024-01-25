@@ -4,6 +4,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="/styleSheets/header.css">
+    <link rel="stylesheet" type="text/css" href="/styleSheets/contact.css">
     <link rel="stylesheet" type="text/css" href="/styleSheets/footer.css">
     <link rel="stylesheet" type="text/css" href="/styleSheets/emailSignUp.css">
 
@@ -37,60 +38,57 @@
     </header>
     <!-- Above is the html for the header -->
   
-  <div class="contact_page" >
-    <h1 class="main">Contact</h1>
-   
-<div class="grow_the_library">
-    <h2>Help Grow the Library</h2> <br>
-    <p>This library is for everyone and is a work in progress <br>
-        If you would like to contribute, <br>feel free to email me below. <br><br>
-        <!-- See about putting a submit form here instead of email -->
-    <h3>Types of contributions</h3> <br>
-    <ul>
-        <li>-Errors, especially of game mechanics.</li>
-        <li>-Variations of any games on this site.</li>
-        <li>-New games that are not on this site.</li>
-        <li>-Features you want implemented.</li>
-        <li>-Problems with unclear rules.</li>
-        <li>-Other inquires are also welcome</li>
- 
-    </ul>
+<main>
+    <h1>Contact</h1>
+    <div id="contact-messages" >
+    <section>
+        <h2>Help Grow the Library</h2> <br>
+        <p>This library is for everyone and is a work in progress.
+            If you would like to contribute, feel free to email me below. All inquiries are welcome. </p>
+            </section>
+            <section>
+                <h2>Types of contributions</h2> <br>
+                <ul>
+                    <li>-Errors, especially of game mechanics.</li>
+                    <li>-Variations of any games on this site.</li>
+                    <li>-New games that are not on this site.</li>
+                    <li>-Features you want implemented.</li>
+                    <li>-Problems with unclear rules.</li>            
+                </ul>
+    </section>
 </div>
 
+        <form id="contact-form" action="https://formspree.io/f/xayzjvkj" method="post">
+            <div class="message_icon">
+                <i class="bi bi-telegram"></i>
+                <span>Message</span>
+            </div>
+            <div id="input_field">
+                <i class="bi bi-person"></i>
+                <input type="text" placeholder="Name" name="name" required>
+                </div>
+                <!-- <div id="input_field">
+                                                <i class="bi bi-telephone"></i>
+                                                <input type="text" placeholder="Phone No." name="Phone">
+                                            </div> -->
+                <div id="input_field">
+                    <i class="bi bi-envelope"></i>
+                <input type="text" placeholder="Email Address" name="Email" required>
+                </div>
+                <div id="input_field">
+                    <i class="bi bi-chat-right-dots"></i>
+                <textarea name="Message" placeholder="Message" rows="10" required></textarea>
+                </div>
+                <input type="submit" value="Submit" class="send_btn">
+                </form>
 
-<div class="hero">
-    <form action="https://formspree.io/f/xayzjvkj" method="post">
-        <div class="message_icon">
-            <i class="bi bi-telegram"></i>
-            <span>Message</span>
-        </div>
-        <div id="input_field">
-            <i class="bi bi-person"></i>
-            <input type="text" placeholder="Name" name="Name">
-        </div>
-        <!-- <div id="input_field">
-            <i class="bi bi-telephone"></i>
-            <input type="text" placeholder="Phone No." name="Phone">
-        </div> -->
-        <div id="input_field">
-            <i class="bi bi-envelope"></i>
-            <input type="text" placeholder="Email Address" name="Email">
-        </div>
-        <div id="input_field">
-            <i class="bi bi-chat-right-dots"></i>
-            <textarea name="Message" placeholder="Message" rows="10"></textarea>
-        </div>
-        <input type="submit" value="Submit" class="send_btn">
-    </form>
-</div>
-
-</div>
+</main>
 
 
 <!-- Below is the html for the sucscription -->
 
-<div class="emailContainer">
-    <form class="sub_form"
+<div class="email-container">
+    <form class="sub-form"
         action="https://yahoo.us21.list-manage.com/subscribe/post?u=0dd659d664538ef51a08b0fc1&amp;id=71e50d986f&amp;f_id=00e0fee1f0"
         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
         novalidate>
@@ -110,7 +108,7 @@
                         <label for="mce-EMAIL">
                             Email:
                         </label>
-                        <input type="email" value="" name="EMAIL" class="required email, inputBox" id="mce-EMAIL"
+                        <input type="email" value="" name="EMAIL" class="required email, input-box" id="mce-EMAIL"
                             required>
                     </div>
                 </li>
@@ -120,32 +118,23 @@
                         <div class="response" id="mce-success-response" style="display:none"></div>
                     </div>
                 </li>
-                <div id="signUpBtnLayout">
+                <div>
                     <li>
                         <div class="mc-field-group">
                             <label for="mce-FNAME">
                                 Name:
                             </label>
-                            <input type="text" value="" name="FNAME" class="inputBox" id="mce-FNAME">
+                            <input type="text" value="" name="FNAME" class="input-box" id="mce-FNAME">
                             <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
                         </div>
                     </li>
                 </div>
             </ul>
-            <input id="sign_up_btn" type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe"
+            <input id="sign-up-btn" type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe"
                 class="button">
             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
                     name="b_0dd659d664538ef51a08b0fc1_71e50d986f" tabindex="-1" value=""></div>
-            <div class="optionalParent">
-                <div class="clear foot">
-                    <!-- <p class="brandingLogo"><a href="http://eepurl.com/ilhCf1"
-                            title="Mailchimp - email marketing made easy and fun"><img
-                                src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a>
-                    </p> -->
-                </div>
-
-            </div>
         </div>
     </form>
     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
