@@ -7,8 +7,10 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../style.css">
-    <title>Agram Rules: How to play Agram</title>
+    <link rel="stylesheet" type="text/css" href="/styleSheets/articles.css">
+    <link rel="stylesheet" type="text/css" href="/styleSheets/header.css">
+    <link rel="stylesheet" type="text/css" href="/styleSheets/emailbox.css">
+    <link rel="stylesheet" type="text/css" href="/styleSheets/footer.css">    <title>Agram Rules: How to play Agram</title>
     <!-- Fill in SEO ----------------- Must be 60 characters or less-------------------->
     <meta name="og:title" property="og:title" content="How to play Agram">
     <!-- Fill in SEO ----------- (this is the same as <h1> -------------------->
@@ -28,31 +30,22 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
 </script> -->
 
 <body>
-    <div class="header">
-        <div class="inner_header">
-            <div class="logo_container">
-                <h1><a href="../index.html">Practical<span>GamingCenter</span></a></h1>
-            </div>
-            <ul class="navigation">
-                <a href="../index.html">
-                    <li>Home</li>
-                </a>
-                <a href="../aztutorials.html">
-                    <li>A-Z Tutorials</li>
-                </a>
-                <a rel="nofollow" target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=3R6SK3PHRWMT8">
-                    <li><span class="donate_button">DONATE</span></li>
-                </a>
-                <li></li>
-                <!-- <a href="shop.html">
-                    <li>Shop</li>
-                </a> -->
+    <header>
+        <p class="site-name">PracticalGamingCenter</p>
+        <nav>
+            <ul>
+                <li id="header-az-tutorials"><a href="/aztutorials.html">A-Z Tutorials</a></li>
+                <li id="header-home"><a href="/index.html">Home</a></li>
+                <li id="header-tools"><a href="/tools.html">Tools</a></li>
+                <li id="header-contact"><a href="/contact.html">Contact</a></li>
+                <li id="header-shop"><a href="/shop.html">Shop</a></li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
 
 
-    <div class="game">
+    <main class="game">
+        <article>
         <h1>How to Play Agram</h1>
         <!--------------------- Fill in SEO ----------------------------------------------------------------------------->
         <p class="pseo"> Agram is a simple trick-taking game for 2-5 players using one deck of playing cards. It is fast and easy to learn. Agram
@@ -61,7 +54,7 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
         <h2>Agram Rules</h2>
         <!--------------------- Fill in SEO -------------------------------------------------------------------------------->
 
-        <p class="type_players_supplies"><strong>| Players:</strong> 2-5
+        <p class="players-type-supplies"><strong>| Players:</strong> 2-5
             |<strong> Type:</strong> Trick-Taking
             |<strong> Supplies:</strong> 1 Deck |
         </p>
@@ -79,7 +72,7 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
 </p>
 
         <!-- <figure>
-        <img class="tutorial_pics" src="../images/tutorialsimage.png" alt="Agram set up: card layout"> 
+        <img src="../images/tutorialsimage.png" alt="Agram set up: card layout"> 
         <figcaption>Agram card layout set up picture</figcaption> 
     </figure>  -->
 
@@ -103,97 +96,75 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
 
 
 
-    </div>
-
-    <div>
-        <div class="email_subscribe_form">
-            <form class="sub_form"
-                action="https://yahoo.us21.list-manage.com/subscribe/post?u=0dd659d664538ef51a08b0fc1&amp;id=71e50d986f&amp;f_id=00e0fee1f0"
-                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
-                    <h2>Practical Gaming News Center</h2>
-
-                    <div class="newsPaper">
-                        <img src="../images/pgcNewsPaper.png">
-
-
-                        <p>Sign up for a better game night experience!
-                            <br>-Get discounts for upcoming products
-                            <br>-Learn rules for unique card games
-                            <br>-Get tips on hosting game nights
-                        </p>
-                    </div>
-
-                    <ul>
+    </article>
+    </main>
+    
+    <div class="email-container">
+        <form class="sub-form"
+            action="https://yahoo.us21.list-manage.com/subscribe/post?u=0dd659d664538ef51a08b0fc1&amp;id=71e50d986f&amp;f_id=00e0fee1f0"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+            novalidate>
+            <div id="mc_embed_signup_scroll">
+                <h3>Practical Gaming News Center</h3>
+                <div class="newsPaper">
+                    <img src="../images/pgcNewsPaper.png">
+                    <p>Sign up for a better game night experience!
+                        <br>-Get discounts for upcoming products
+                        <br>-Learn rules for unique card games
+                        <br>-Get tips on hosting game nights
+                    </p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL">
+                                Email:
+                            </label>
+                            <input type="email" value="" name="EMAIL" class="required email, input-box" id="mce-EMAIL"
+                                required>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="mce-responses" class="clear foot">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                    </li>
+                    <div>
                         <li>
                             <div class="mc-field-group">
-                                <label for="mce-EMAIL">Email Address
+                                <label for="mce-FNAME">
+                                    Name:
                                 </label>
-                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"
-                                    required>
-                            </div>
-                        </li>
-                        <li>
-                            <div id="mce-responses" class="clear foot">
-                                <div class="response" id="mce-error-response" style="display:none"></div>
-                                <div class="response" id="mce-success-response" style="display:none"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="mc-field-group">
-                                <label for="mce-FNAME">First Name </label>
-                                <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                                <input type="text" value="" name="FNAME" class="input-box" id="mce-FNAME">
                                 <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
                             </div>
                         </li>
-
-                        <li>
-                            <input id="sign_up_btn" type="submit" value="Sign up" name="subscribe"
-                                id="mc-embedded-subscribe" class="button">
-                        </li>
-                    </ul>
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                            name="b_0dd659d664538ef51a08b0fc1_71e50d986f" tabindex="-1" value=""></div>
-                    <div class="optionalParent">
-
-                        <div class="clear foot">
-                            <!-- <p class="brandingLogo"><a href="http://eepurl.com/ilhCf1"
-                            title="Mailchimp - email marketing made easy and fun"><img
-                                src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a>
-                    </p> -->
-                        </div>
-
                     </div>
-                </div>
-            </form>
-        </div>
+                </ul>
+                <input id="sign-up-btn" type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe"
+                    class="button">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                        name="b_0dd659d664538ef51a08b0fc1_71e50d986f" tabindex="-1" value=""></div>
+            </div>
+        </form>
         <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
         <script
             type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
         <!--End mc_embed_signup-->
     </div>
-
-
-    <div class="footer">
+    
+    <footer>
         <ul>
-
-            <a rel="nofollow" rel="sponsored" target="_blank"
-                href="https://www.etsy.com/shop/DigitalGamingCenter?coupon=HALFOFF">
-                <li class="footer_etsy">Etsy Store</li>
-            </a>
-            <a rel="nofollow" target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=3R6SK3PHRWMT8">
-                <button>
-                    <li class="footer_donate">DONATE</li>
-                </button>
-            </a>
-            <a href="../contact.html">
-                <li class="footer_contact">Contact</li><a>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a rel="nofollow" rel="sponsored" target="_blank"
+                    href="https://www.etsy.com/shop/DigitalGamingCenter?coupon=HALFOFF"><span id="etsy-store-text">Etsy
+                        Store</span></a></li>
+            <li class="footer_donate"><a rel="nofollow" target="_blank"
+                    href="https://www.paypal.com/donate/?hosted_button_id=3R6SK3PHRWMT8">Donate</a></li>
         </ul>
-        <li class="bottom_of_page"></li>
-
-    </div>
+    </footer>
 </body>
 
 </html>
