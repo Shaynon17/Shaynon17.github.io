@@ -1,17 +1,12 @@
 /* CSS for aztutorials.html page below */
 
 .aztutorials {
-    position: relative;
-    margin-top: 80px;
+    margin-top: 60px;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
 }
 
 .grow_the_library {
-    width: 75%;
     text-align: center;
-    margin: auto;
 }
 
 .aztutorials p {
@@ -101,5 +96,3 @@
 } */
 
 /*DATA TABLE ABOVE*/
-
-/* CSS for aztutorials.html page above*/
