@@ -1,0 +1,56 @@
+
+.game h1 {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 3.5vw;
+}
+
+.game .pseo {
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    font-size: 1.75vw;
+}
+
+.game h2 {
+    text-align: center;
+    font-size: 3.25vw;
+}
+
+.game .type_players_supplies {
+    text-align: center;
+    margin: auto;
+    font-size: 1.8vw;
+}
+
+.game .players-type-supplies {
+    text-align: center;
+    margin: auto;
+    font-size: 1.8vw;
+}
+
+.game h3 {
+    font-size: 3vw;
+    text-align: left;
+    margin: auto;
+    width: 75%;
+}
+
+.game p {
+    width: 75%;
+    text-align: left;
+    margin: auto;
+    font-size: 1.75vw;
+    padding: 10px 10px;
+}
+
+.tutorial_pics {
+    text-align: center;
+    width: 30%;
+    margin-left: 35%;
+    background-color: red;
+}
+
+.game figcaption {
+    text-align: center;
+}

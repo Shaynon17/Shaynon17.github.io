@@ -195,9 +195,7 @@ padding: 10px 0;
     margin: auto;
     width: 75%;
 }
-#delete{
-    color: red;
-}
+
 
 .game .type_players_supplies{
 width: 75%;
@@ -206,13 +204,6 @@ width: 75%;
     font-size: 20px;
 }
 
-.variant_link {
-    text-decoration: underline;
-}
-
-.variant_link:hover {
-opacity: 0.5;
-}
 
 /* CSS for tutorial page template above */
 
