@@ -44,11 +44,10 @@
     padding: 10px 10px;
 }
 
-.tutorial_pics {
+.game img {
     text-align: center;
     width: 30%;
     margin-left: 35%;
-    background-color: red;
 }
 
 .game figcaption {
