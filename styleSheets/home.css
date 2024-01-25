@@ -25,16 +25,16 @@ p {
     text-align: center;
 }
 
-#mainTitle {
+#main-title {
     grid-area: 1 / 1 / 2 / 3;
     text-align: center;
 }
 
-#mainTitle h1 {
+#main-title h1 {
     font-size: 3vw;
 }
 
-#mainTitle h2 {
+#main-title h2 {
     margin-top: 10px;
     font-size: 2.5vw;
 }
@@ -43,9 +43,6 @@ h2 {
         font-size: 2.5vw;
 }
 
-/* .homeSection {
-    border: solid 1px black;
-} */
 
 #az-tutorials {
     grid-area: 2 / 1 / 3 / 2;
@@ -61,24 +58,24 @@ h2 {
 }
 
 
-#homeSetUpPic {
+#home-set-up-pic {
     grid-area: 2 / 2 / 3 / 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#homeSetUpPic div {
+#home-set-up-pic div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#homeSetUpPic p {
+#home-set-up-pic p {
     width: 45%;
 }
 
-#homeSetUpPic img {
+#home-set-up-pic img {
     margin-left: 2%;
     width: 25%;
     border: solid 1px black;
@@ -89,7 +86,7 @@ h2 {
 
 
 
-#homeYoutubeSection {
+#home-youtube-section {
     grid-area: 3 / 1 / 4 / 2;
     display: flex;
     flex-direction: column;
@@ -97,20 +94,20 @@ h2 {
     justify-content: center;
 }
 
-#homeYoutubeSection div {
+#home-youtube-section div {
     display: flex;
     justify-items: center;
 }
 
-#homeYoutubeSection img {
+#home-youtube-section img {
     width: 4vw;
 }
 
-#homeYoutubeSection h2 {
+#home-youtube-section h2 {
 margin-left: 10px;
 }
 
-#homeYoutubeSection p {
+#home-youtube-section p {
     background-color: #ff0000;
     color: white;
     border-radius: 25px;
@@ -124,14 +121,14 @@ margin-left: 10px;
 
 
 
-#homeScoreboardSection {
+#home-scoreboard-section {
     grid-area: 3 / 2 / 4 / 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#homeScoreboards {
+#home-scoreboards {
     background-color: #666769;
     width: 90%;
     margin-left: 5%;
@@ -140,7 +137,7 @@ margin-left: 10px;
     padding: 10px;
 }
 
-#homeScoreboards p {
+#home-scoreboards p {
     color: white;
     margin-bottom: 10px;
     margin-top: -10px;
@@ -151,13 +148,13 @@ margin-left: 10px;
     text-align: center;
 }
 
-.scoreboardButtons {
+.scoreboard-buttons {
     border-radius: 7px;
         padding: 2px 5px;
         font-size: 1.25vw;
     }
 
-#homeScoreboards label {
+#home-scoreboards label {
         font-size: 1.5vw;
         }
         
@@ -165,7 +162,7 @@ margin-left: 10px;
 font-size: 1.5vw;
 }
 
-#resetButton {
+#reset-button {
     margin-top: 1%;
     border-radius: 7px;
     padding: 2px 20px;
@@ -175,7 +172,7 @@ font-size: 1.5vw;
 
 
 
-#homeOhShootSection {
+#home-oh-shoot-section {
     display: flex;
         width: 94%;
         margin-left: 2%;
@@ -221,16 +218,16 @@ font-size: 1.5vw;
         margin-left: 10%;
     }
 
-    #homeSetUpPic img {
+    #home-set-up-pic img {
         width: 100px;
     }
 
-        #homeScoreboards p {
+        #home-scoreboards p {
             margin-bottom: 10px;
             margin-top: 5px;
         }
 
-        #homeOhShootSection {
+        #home-oh-shoot-section {
     display: flex;
     width: 76%;
     margin-left: 10%;
