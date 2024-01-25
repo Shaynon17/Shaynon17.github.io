@@ -9,32 +9,19 @@
     text-align: center;
 }
 
+.aztutorials h1 {
+    font-size: 3.25vw;
+}
+
 .aztutorials p {
     width: 100%;
     text-align: center;
     margin: auto;
-    font-size: 25px;
-}
-
-.aztutorials h1 {
-    font-size: 45px;
+    font-size: 2vw;
 }
 
 .aztutorials h2 {
-    font-size: 40px;
-}
-
-.aztutorials h3 {
-    font-size: 35px;
-}
-
-.aztutorials li {
-    font-size: 25px;
-}
-
-
-#a-z_bar {
-    width: 100%;
+    font-size: 2vw;
 }
 
 
@@ -42,7 +29,7 @@
 .content_table {
     border-collapse: collapse;
     margin: 5px 0;
-    font-size: 25px;
+    font-size: 2.25vw;
     min-width: 95%;
     text-align: center;
     margin-left: auto;
@@ -55,7 +42,7 @@
 
 .content_table th:first-child {
     width: 0%;
-    font-size: 35px;
+    font-size: 2.75vw;
 }
 
 .content_table th:nth-child(2) {
@@ -71,11 +58,14 @@
     border-bottom: 1px solid #dddddd;
 }
 
+
+/* aquiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii */
+
 .table_head {
     background-color: black;
     color: white;
     text-align: center;
-    height: 50px;
+    height: 3vw;
 }
 
 .table_letter {
