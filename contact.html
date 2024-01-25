@@ -40,7 +40,7 @@
   
 <main>
     <h1>Contact</h1>
-    <div id="contact-messages" >
+    <div id="contact-sections" >
     <section>
         <h2>Help Grow the Library</h2> <br>
         <p>This library is for everyone and is a work in progress.
@@ -59,29 +59,26 @@
 </div>
 
         <form id="contact-form" action="https://formspree.io/f/xayzjvkj" method="post">
+           <div id="inner-form">
             <div class="message_icon">
                 <i class="bi bi-telegram"></i>
-                <span>Message</span>
+                <span id="message-me" >Message Practical Gaming Center</span>
             </div>
             <div id="input_field">
-                <i class="bi bi-person"></i>
+                <i class="bi bi-person"></i><br>
                 <input type="text" placeholder="Name" name="name" required>
                 </div>
-                <!-- <div id="input_field">
-                                                <i class="bi bi-telephone"></i>
-                                                <input type="text" placeholder="Phone No." name="Phone">
-                                            </div> -->
                 <div id="input_field">
-                    <i class="bi bi-envelope"></i>
+                    <i class="bi bi-envelope"></i><br>
                 <input type="text" placeholder="Email Address" name="Email" required>
                 </div>
                 <div id="input_field">
-                    <i class="bi bi-chat-right-dots"></i>
+                    <i class="bi bi-chat-right-dots"></i><br>
                 <textarea name="Message" placeholder="Message" rows="10" required></textarea>
                 </div>
-                <input type="submit" value="Submit" class="send_btn">
+                <input type="submit" value="Send" class="send_btn">
                 </form>
-
+</div>
 </main>
 
 
