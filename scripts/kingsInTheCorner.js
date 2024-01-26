@@ -1,49 +1,95 @@
-let player1Count = 0
-document.getElementById("rummy500_minusTenBtn").onclick = function () {
-    player1Count -= 10;
-    document.getElementById("rummy500_countLabel").innerHTML = player1Count;
+let playerOneScore = 0;
+let playerTwoScore = 0;
+let playerThreeScore = 0;
+let playerFourScore = 0;
+
+
+
+
+
+function player1PlusTen() {
+    playerOneScore += 10;
+    document.getElementById("player-one-score").innerHTML = playerOneScore;
 }
 
-document.getElementById("rummy500_minusFiveBtn").onclick = function () {
-    player1Count -= 5;
-    document.getElementById("rummy500_countLabel").innerHTML = player1Count;
+function player1PlusOne() {
+    playerOneScore += 1;
+    document.getElementById("player-one-score").innerHTML = playerOneScore;
 }
 
-document.getElementById("rummy500_minusOneBtn").onclick = function () {
-    player1Count -= 1;
-    document.getElementById("rummy500_countLabel").innerHTML = player1Count;
-}
-
-document.getElementById("rummy500_addOneBtn").onclick = function () {
-    player1Count += 1;
-    document.getElementById("rummy500_countLabel").innerHTML = player1Count;
-}
-
-document.getElementById("rummy500_addFiveBtn").onclick = function () {
-    player1Count += 5;
-    document.getElementById("rummy500_countLabel").innerHTML = player1Count;
-}
-
-document.getElementById("rummy500_addTenBtn").onclick = function () {
-    player1Count += 10;
-    document.getElementById("rummy500_countLabel").innerHTML = player1Count;
+function player1MinusOne() {
+    playerOneScore -= 1;
+    document.getElementById("player-one-score").innerHTML = playerOneScore;
 }
 
 
 
 
 
-// const node = document.getElementById("scoreboard_player1")
 
-// // Get the element
-// const elem = document.querySelector('#elem1');
+function player2PlusTen() {
+    playerTwoScore += 10;
+    document.getElementById("player-two-score").innerHTML = playerTwoScore;
+}
 
-// // Create a copy of it
-// let clone = elem.cloneNode(true);
+function player2PlusOne() {
+    playerTwoScore += 1;
+    document.getElementById("player-two-score").innerHTML = playerTwoScore;
+}
 
-// // Update the ID and add a class
-// clone.id = 'elem2';
-// clone.classList.add('text-large');
+function player2MinusOne() {
+    playerTwoScore -= 1;
+    document.getElementById("player-two-score").innerHTML = playerTwoScore;
+}
 
-// // Inject it into the DOM
-// elem.after(clone);
+
+
+
+
+function player3PlusTen() {
+    playerThreeScore += 10;
+    document.getElementById("player-three-score").innerHTML = playerThreeScore;
+}
+
+function player3PlusOne() {
+    playerThreeScore += 1;
+    document.getElementById("player-three-score").innerHTML = playerThreeScore;
+}
+
+function player3MinusOne() {
+    playerThreeScore -= 1;
+    document.getElementById("player-three-score").innerHTML = playerThreeScore;
+}
+
+
+
+
+
+function player4PlusTen() {
+    playerFourScore += 10;
+    document.getElementById("player-four-score").innerHTML = playerFourScore;
+}
+
+function player4PlusOne() {
+    playerFourScore += 1;
+    document.getElementById("player-four-score").innerHTML = playerFourScore;
+}
+
+function player4MinusOne() {
+    playerFourScore -= 1;
+    document.getElementById("player-four-score").innerHTML = playerFourScore;
+}
+
+
+
+
+function resetScore() {
+    playerOneScore = 0;
+    playerTwoScore = 0;
+    playerThreeScore = 0;
+    playerFourScore = 0;
+    document.getElementById("player-one-score").innerHTML = playerOneScore;
+    document.getElementById("player-two-score").innerHTML = playerTwoScore;
+    document.getElementById("player-three-score").innerHTML = playerThreeScore;
+    document.getElementById("player-four-score").innerHTML = playerFourScore;
+}

@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="/styleSheets/ArticleScoreboardCSS/kingsinthecorner.css">
+    <script src="/scripts/kingsInTheCorner.js"></script>
     <link rel="stylesheet" type="text/css" href="/styleSheets/articles.css">
     <link rel="stylesheet" type="text/css" href="/styleSheets/header.css">
     <link rel="stylesheet" type="text/css" href="/styleSheets/emailbox.css">
@@ -12,7 +14,6 @@
     <!-- Fill in SEO ----------- (this is the same as <h1> -------------------->
     <meta name="description" content="Kings.in the Corner Rules: How to play Kings in the Corner">
     <!-- Fill in SEO -------------------------------->
-
 </head>
 
 <!-- Google tag (gtag.js) Must stay immediateley after the <head> element -->
@@ -52,7 +53,7 @@
 
         <p class="players-type-supplies"><strong>| Players:</strong> 2-4
             <strong>| Type:</strong> Patience
-            <strong>| Supplies:</strong> 1 Deck, paper and pen |
+            <strong>| Supplies:</strong> 1 Deck, Paper and Pen |
         </p>
 
         <h3>Objective</h3> 
@@ -104,6 +105,41 @@
             player reaches
             25 points, the game is over. If you do not want to keep score, check out the variants.</p>
 
+        <section>
+            <div id="scoreboard-container">
+                <label>Player 1</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-one-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player1PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player1PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player1MinusOne()">-1</button>
+                <br>
+                <label>Player 2</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-two-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player2PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player2PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player2MinusOne()">-1</button>
+                <br>
+                <label>Player 3</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-three-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player3PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player3PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player3MinusOne()">-1</button>
+                <br>
+                <label>Player 4</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-four-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player4PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player4PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player4MinusOne()">-1</button>
+                <br>
+                <button id="reset-button" onclick="resetScore()">Reset Score</button>
+            </div>
+        </section>
+
+
         <h3>Winner</h3> 
         <p>When any player reaches 25 points, the game is over. The player with the least amount of points at the end of
             the game
@@ -115,37 +151,6 @@
             When the score is not kept, kings are not allowed to stay in your hand. If you start with one in your
             starting hand, you
             must play it at the start of your turn. If you draw a king, you must play it immediately.</p>
-
-<!-- <div class="kingsinthecorner_scoreboard">
-    <h3>Scoreboard</h3>
-    <div id="kingsCorner_topOfScoreBoard">
-        <div id="scoreboard_player1">
-            <label>1</label>
-            <input type="text" placeholder="Player Name">
-            <label class="playerScore" id="rummy500_countLabel">0</label>
-            <button id="rummy500_addTenBtn">+10</button>
-            <button id="rummy500_addFiveBtn">+5</button>
-            <button id="rummy500_addOneBtn">+1</button>
-            <button id="rummy500_minusOneBtn">-1</button>
-            <button id="rummy500_minusFiveBtn">-5</button>
-            <button id="rummy500_minusTenBtn">-10</button>
-            <br><br>
-        </div>
-    </div> -->
-    <!-- <button onclick=addPlayer()>Add Player</button> -->
-
-    <!-- <script>
-        function addPlayer() {
-            const node = document.getElementById("scoreboard_player1");
-            const clone = node.cloneNode(true);
-            document.getElementById("kingsCorner_topOfScoreBoard").appendChild(clone);
-        }
-    </script> -->
-
-
-
-    <!-- <script src="../scripts/kingsInTheCorner.js"></script>
-</div> -->
 
     </article>
     </main>
