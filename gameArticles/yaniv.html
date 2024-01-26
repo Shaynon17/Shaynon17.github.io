@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="/styleSheets/ArticleScoreboardCSS/yaniv.css">
+    <script src="/scripts/yaniv.js"></script>
     <link rel="stylesheet" type="text/css" href="/styleSheets/articles.css">
     <link rel="stylesheet" type="text/css" href="/styleSheets/header.css">
     <link rel="stylesheet" type="text/css" href="/styleSheets/emailbox.css">
@@ -129,6 +131,57 @@
         If a player's score reaches exactly 200, their score is reduced to 100.<br><br>
         If a player's score reaches exactly 100, their score is reduced to 50.
         </p>
+
+        <section>
+            <div id="scoreboard-container">
+                <label>Player 1</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-one-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player1PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player1PlusFive()">+5</button>
+                <button class="scoreboard-buttons plus" onclick="player1PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player1MinusOne()">-1</button>
+                <button class="scoreboard-buttons minus" onclick="player1MinusTen()">-10</button>
+                <br>
+                <label>Player 2</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-two-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player2PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player2PlusFive()">+5</button>
+                <button class="scoreboard-buttons plus" onclick="player2PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player2MinusOne()">-1</button>
+                <button class="scoreboard-buttons minus" onclick="player2MinusTen()">-10</button>
+                <br>
+                <label>Player 3</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-three-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player3PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player3PlusFive()">+5</button>
+                <button class="scoreboard-buttons plus" onclick="player3PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player3MinusOne()">-1</button>
+                <button class="scoreboard-buttons minus" onclick="player3MinusTen()">-10</button>
+                <br>
+                <label>Player 4</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-four-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player4PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player4PlusFive()">+5</button>
+                <button class="scoreboard-buttons plus" onclick="player4PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player4MinusOne()">-1</button>
+                <button class="scoreboard-buttons minus" onclick="player4MinusTen()">-10</button>
+                <br>
+                <label>Player 4</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-five-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player5PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player5PlusFive()">+5</button>
+                <button class="scoreboard-buttons plus" onclick="player5PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player5MinusOne()">-1</button>
+                <button class="scoreboard-buttons minus" onclick="player5MinusTen()">-10</button>
+                <br>
+                <button id="reset-button" onclick="resetScore()">Reset Score</button>
+            </div>
+        </section>
 
         <h3>Winner</h3>
         <p>Play continues until only one player remains in the game, this player wins. If the last two players surpass 200 at the
