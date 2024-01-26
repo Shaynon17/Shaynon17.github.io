@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="/styleSheets/ArticleScoreboardCSS/leopard.css">
+    <script src="/scripts/leopard.js"></script>
     <link rel="stylesheet" type="text/css" href="/styleSheets/articles.css">
     <link rel="stylesheet" type="text/css" href="/styleSheets/header.css">
     <link rel="stylesheet" type="text/css" href="/styleSheets/emailbox.css">
@@ -121,6 +123,24 @@
         get one additional point). If a player scores 9 points, they get 11 points (since 9 is two above 7, they get two
         additional points).
         </p>
+
+        <section>
+            <div id="scoreboard-container">
+                <label>Player 1</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-one-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player1PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player1MinusOne()">-1</button>
+                <br>
+                <label>Player 2</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-two-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player2PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player2MinusOne()">-1</button>
+                <br>
+                <button id="reset-button" onclick="resetScore()">Reset Score</button>
+            </div>
+        </section>
 
         <h3>Winner</h3>
         <p>After four rounds are played, the player with the highest total score is the winner. (You may play any predetermined
