@@ -7,7 +7,10 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="/styleSheets/articles.css">
+    <link rel="stylesheet" type="text/css" href="/styleSheets/header.css">
+    <link rel="stylesheet" type="text/css" href="/styleSheets/emailbox.css">
+    <link rel="stylesheet" type="text/css" href="/styleSheets/footer.css">
     <title>99 card.game Rules: How to play 99 (Ninety-Nine)</title>
     <!-- Fill in SEO ------------------------------------------------------------------->
     <meta name="og:title" property="og:title" content="How to play 99 Card Game (Ninety-Nine)">
@@ -29,31 +32,21 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
 
 
 <body>
-    <div class="header">
-        <div class="inner_header">
-            <div class="logo_container">
-                <h1><a href="../index.html">Practical<span>GamingCenter</span></a></h1>
-            </div>
-            <ul class="navigation">
-                <a href="../index.html">
-                    <li>Home</li>
-                </a>
-                <a href="../aztutorials.html">
-                    <li>A-Z Tutorials</li>
-                </a>
-                <a rel="nofollow" target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=3R6SK3PHRWMT8">
-                    <li><span class="donate_button">DONATE</span></li>
-                </a>
-                <li></li>
-                <!-- <a href="shop.html">
-                    <li>Shop</li>
-                </a> -->
+    <header>
+        <p class="site-name">PracticalGamingCenter</p>
+        <nav>
+            <ul>
+                <li id="header-az-tutorials"><a href="/aztutorials.html">A-Z Tutorials</a></li>
+                <li id="header-home"><a href="/index.html">Home</a></li>
+                <li id="header-tools"><a href="/tools.html">Tools</a></li>
+                <li id="header-contact"><a href="/contact.html">Contact</a></li>
+                <li id="header-shop"><a href="/shop.html">Shop</a></li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
 
-
-    <div class="game">
+    <main class="game">
+        <article>
         <h1>How to Play 99 Card Game<br>(Ninety Nine Card Game)</h1> 
         <!--------------------- Fill in SEO ----------------------------------------------------------------------------->
         <p class="pseo">The 99 card game is an addition game. Certain cards have special properties instead of having numeric value.
@@ -62,8 +55,8 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
         <h2>99 Card Game Rules</h2> 
         <!--------------------- Fill in SEO -------------------------------------------------------------------------------->
 
-        <p class="type_players_supplies"><strong>| Players:</strong> 2+
-<strong>| Type:</strong> Addition 
+        <p class="players-type-supplies"><strong>| Players:</strong> 2+
+        <strong>| Type:</strong> Addition 
             <strong>| Supplies:</strong> 1 Deck, 3 tokens per player |</p>
 
         <h3>Objective</h3> 
@@ -75,7 +68,7 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
         <p>Each player is dealt three cards, one at a time. The remaining cards are placed in the middle.</p>
 
         <h3>Card Value</h3> 
-        <ul class="card_value">
+        <ul class="card-value">
             <li>2-8 (except 4): Face value</li>
             <li>Jack/Queen: 10</li>
             <li>Ace: 1 or 11 (player chooses)</li>
@@ -98,16 +91,16 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
 
         <h3>Additional Rules</h3> 
         <p>If there are only two players, 4s are worth face value.
-</p>
+        </p>
 
         <h3>Winner</h3> 
         <p>The last player with a token is the winner.
-</p>
+        </p>
  
     </div>
 
 
-<div class="ninetyNine_scoreboard">
+<!-- <div class="ninetyNine_scoreboard">
         <h3>Middle Running Total</h3>
     <label id="ninetyNine_countLabel">0</label><br>
     <button id="ninetyNine_resetBtn">Reset<br><br> (0)</button>
@@ -116,35 +109,35 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
 <button id="ninetyNine_increaseTenBtn">Increase<br><br>+10</button>
 <button id="ninetyNine_kingBtn">King<br><br>(99)</button>
 <script src="../scripts/ninetyNine.js"></script>
-</div>
+</div> -->
 
     
-<div>
-    <div class="email_subscribe_form">
-        <form class="sub_form"
+    </article>
+    </main>
+    
+    <div class="email-container">
+        <form class="sub-form"
             action="https://yahoo.us21.list-manage.com/subscribe/post?u=0dd659d664538ef51a08b0fc1&amp;id=71e50d986f&amp;f_id=00e0fee1f0"
-            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-            target="_blank" novalidate>
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+            novalidate>
             <div id="mc_embed_signup_scroll">
-                <h2>Practical Gaming News Center</h2>
-
+                <h3>Practical Gaming News Center</h3>
                 <div class="newsPaper">
                     <img src="../images/pgcNewsPaper.png">
-
-
                     <p>Sign up for a better game night experience!
                         <br>-Get discounts for upcoming products
                         <br>-Learn rules for unique card games
                         <br>-Get tips on hosting game nights
                     </p>
                 </div>
-
                 <ul>
                     <li>
                         <div class="mc-field-group">
-                            <label for="mce-EMAIL">Email Address
+                            <label for="mce-EMAIL">
+                                Email:
                             </label>
-                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+                            <input type="email" value="" name="EMAIL" class="required email, input-box" id="mce-EMAIL"
+                                required>
                         </div>
                     </li>
                     <li>
@@ -153,60 +146,42 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
                             <div class="response" id="mce-success-response" style="display:none"></div>
                         </div>
                     </li>
-                    <li>
-                        <div class="mc-field-group">
-                            <label for="mce-FNAME">First Name </label>
-                            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-                            <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
-                        </div>
-                    </li>
-
-                    <li>
-                        <input id="sign_up_btn" type="submit" value="Sign up" name="subscribe"
-                            id="mc-embedded-subscribe" class="button">
-                    </li>
+                    <div>
+                        <li>
+                            <div class="mc-field-group">
+                                <label for="mce-FNAME">
+                                    Name:
+                                </label>
+                                <input type="text" value="" name="FNAME" class="input-box" id="mce-FNAME">
+                                <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
+                            </div>
+                        </li>
+                    </div>
                 </ul>
+                <input id="sign-up-btn" type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe"
+                    class="button">
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
                         name="b_0dd659d664538ef51a08b0fc1_71e50d986f" tabindex="-1" value=""></div>
-                <div class="optionalParent">
-
-                    <div class="clear foot">
-                        <!-- <p class="brandingLogo"><a href="http://eepurl.com/ilhCf1"
-                            title="Mailchimp - email marketing made easy and fun"><img
-                                src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a>
-                    </p> -->
-                    </div>
-
-                </div>
             </div>
         </form>
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+        <script
+            type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+        <!--End mc_embed_signup-->
     </div>
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-    <script
-        type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
-    <!--End mc_embed_signup-->
-</div>
-
-
-    <div class="footer">
+    
+    <footer>
         <ul>
-    
-            <a rel="nofollow" rel="sponsored" target="_blank"
-                href="https://www.etsy.com/shop/DigitalGamingCenter?coupon=HALFOFF">
-                <li class="footer_etsy">Etsy Store</li>
-            </a>
-            <a rel="nofollow" target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=3R6SK3PHRWMT8">
-                <button>
-                    <li class="footer_donate">DONATE</li>
-                </button>
-            </a>
-        <a href="../contact.html">
-                <li class="footer_contact">Contact</li><a>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a rel="nofollow" rel="sponsored" target="_blank"
+                    href="https://www.etsy.com/shop/DigitalGamingCenter?coupon=HALFOFF"><span id="etsy-store-text">Etsy
+                        Store</span></a></li>
+            <li class="footer_donate"><a rel="nofollow" target="_blank"
+                    href="https://www.paypal.com/donate/?hosted_button_id=3R6SK3PHRWMT8">Donate</a></li>
         </ul>
-        <li class="bottom_of_page"></li>
+    </footer>
     
-    </div>
-</body>
-
-</html>
+    </body>
+    
+    </html>
