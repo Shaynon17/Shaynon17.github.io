@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="/styleSheets/ArticleScoreboardCSS/hockey.css">
+    <script src="/scripts/hockey.js"></script>
     <link rel="stylesheet" type="text/css" href="/styleSheets/articles.css">
     <link rel="stylesheet" type="text/css" href="/styleSheets/header.css">
     <link rel="stylesheet" type="text/css" href="/styleSheets/emailbox.css">
@@ -89,10 +91,27 @@
         <p>To win hockey, the team with the highest score after three rounds is played wins. If there is a tie, continue playing
         rounds until the tie is broken.
       </p>
-
-
     </article>
     </main>
+
+    <section>
+            <div id="scoreboard-container">
+                <label>Team 1</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Team Name" />
+                <label id="team-one-score">0</label>
+                <button class="scoreboard-buttons plus-one" onclick="team1PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus-one" onclick="team1MinusOne()">-1</button>
+                <br>
+                <label>Team 2</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Team Name" />
+                <label id="team-two-score">0</label>
+                <button class="scoreboard-buttons plus-one" onclick="team2PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus-one" onclick="team2MinusOne()">-1</button>
+                <br>
+                <button id="reset-button" onclick="resetScore()">Reset Score</button>
+            </div>
+    </section>
+
     
     <div class="email-container">
         <form class="sub-form"
