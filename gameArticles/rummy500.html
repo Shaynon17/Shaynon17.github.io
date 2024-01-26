@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="/styleSheets/ArticleScoreboardCSS/rummy500.css">
+    <script src="/scripts/rummy500.js"></script>
     <link rel="stylesheet" type="text/css" href="/styleSheets/articles.css">
     <link rel="stylesheet" type="text/css" href="/styleSheets/header.css">
     <link rel="stylesheet" type="text/css" href="/styleSheets/emailbox.css">
@@ -12,7 +14,6 @@
     <!-- Fill in SEO ----------- (this is the same as <h1> -------------------->
     <meta name="description" content="Rummy 500 Rules: How to play Rummy 500">
     <!-- Fill in SEO -------------------------------->
-
 </head>
 
 <!-- Google tag (gtag.js) Must stay immediateley after the <head> element -->
@@ -51,7 +52,7 @@
 
         <p class="players-type-supplies"><strong>| Players:</strong> 2-8
         <strong>| Type:</strong> Rummy 
-            <strong>| Supplies:</strong> 1+ Deck(s), pen and paper |
+            <strong>| Supplies:</strong> 1+ Deck(s), Pen and Paper |
         </p>
 
         <p>You will need one deck for 2-4 players and two decks for 5-8 players.
@@ -115,6 +116,92 @@
             players
             lose points for each card still in their hand at the end of a round.</p>
 
+        <section>
+            <div id="scoreboard-container">
+                <label>Player 1</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-one-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player1PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player1PlusFive()">+5</button>
+                <button class="scoreboard-buttons plus" onclick="player1PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player1MinusOne()">-1</button>
+                <button class="scoreboard-buttons minus" onclick="player1MinusFive()">-5</button>
+                <button class="scoreboard-buttons minus" onclick="player1MinusTen()">-10</button>
+                <br>
+                <label>Player 2</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-two-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player2PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player2PlusFive()">+5</button>
+                <button class="scoreboard-buttons plus" onclick="player2PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player2MinusOne()">-1</button>
+                <button class="scoreboard-buttons minus" onclick="player2MinusFive()">-5</button>
+                <button class="scoreboard-buttons minus" onclick="player2MinusTen()">-10</button>
+                <br>
+                <label>Player 3</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-three-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player3PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player3PlusFive()">+5</button>
+                <button class="scoreboard-buttons plus" onclick="player3PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player3MinusOne()">-1</button>
+                <button class="scoreboard-buttons minus" onclick="player3MinusFive()">-5</button>
+                <button class="scoreboard-buttons minus" onclick="player3MinusTen()">-10</button>
+                <br>
+                <label>Player 4</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-four-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player4PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player4PlusFive()">+5</button>
+                <button class="scoreboard-buttons plus" onclick="player4PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player4MinusOne()">-1</button>
+                <button class="scoreboard-buttons minus" onclick="player4MinusFive()">-5</button>
+                <button class="scoreboard-buttons minus" onclick="player4MinusTen()">-10</button>
+                <br>
+                <label>Player 5</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-five-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player5PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player5PlusFive()">+5</button>
+                <button class="scoreboard-buttons plus" onclick="player5PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player5MinusOne()">-1</button>
+                <button class="scoreboard-buttons minus" onclick="player5MinusFive()">-5</button>
+                <button class="scoreboard-buttons minus" onclick="player5MinusTen()">-10</button>
+                <br>
+                <label>Player 6</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-six-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player6PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player6PlusFive()">+5</button>
+                <button class="scoreboard-buttons plus" onclick="player6PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player6MinusOne()">-1</button>
+                <button class="scoreboard-buttons minus" onclick="player6MinusFive()">-5</button>
+                <button class="scoreboard-buttons minus" onclick="player6MinusTen()">-10</button>
+                <br>
+                <label>Player 7</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-seven-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player7PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player7PlusFive()">+5</button>
+                <button class="scoreboard-buttons plus" onclick="player7PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player7MinusOne()">-1</button>
+                <button class="scoreboard-buttons minus" onclick="player7MinusFive()">-5</button>
+                <button class="scoreboard-buttons minus" onclick="player7MinusTen()">-10</button>
+                <br>
+                <label>Player 8</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-eight-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player8PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player8PlusFive()">+5</button>
+                <button class="scoreboard-buttons plus" onclick="player8PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player8MinusOne()">-1</button>
+                <button class="scoreboard-buttons minus" onclick="player8MinusFive()">-5</button>
+                <button class="scoreboard-buttons minus" onclick="player8MinusTen()">-10</button>
+                <br>
+                <button id="reset-button" onclick="resetScore()">Reset Score</button>
+            </div>
+        </section>
+
         <h3>Additional Rules</h3> 
         <p>-The ace is always ranked low when used in a run<br><br>
         -Once a meld is laid on the table and declared, it can not be moved, and the cards within it can not be used in a
@@ -136,114 +223,6 @@
         <p>Alternative Scoring: <br>
             2-10: face value (instead of 5 points each)
         </p>
-
-
-<div class="rummy500_scoreboard">
-
-<h3>Scoreboard</h3>
-
-<label>1</label>
-<input type="text" placeholder="Player Name">
-<label class="playerScore" id="rummy500_countLabel">0</label>
-<button id="rummy500_addTenBtn">+10</button>
-<button id="rummy500_addFiveBtn">+5</button>
-<button id="rummy500_addOneBtn">+1</button>
-<button id="rummy500_minusOneBtn">-1</button>
-<button id="rummy500_minusFiveBtn">-5</button>
-<button id="rummy500_minusTenBtn">-10</button> 
-<br><br>
-
-<!-- <button id="rummy500_resetBtn2">Reset</button> -->
-<label>2</label>
-<input type="text" placeholder="Player Name">
-<label class="playerScore" id="rummy500_countLabel2">0</label>
-<button id="rummy500_addTenBtn2">+10</button>
-<button id="rummy500_addFiveBtn2">+5</button>
-<button id="rummy500_addOneBtn2">+1</button>
-<button id="rummy500_minusOneBtn2">-1</button>
-<button id="rummy500_minusFiveBtn2">-5</button>
-<button id="rummy500_minusTenBtn2">-10</button> <br><br>
-
-
-<!-- <button id="rummy500_resetBtn3">Reset</button> -->
-<label>3</label>
-<input type="text" placeholder="Player Name">
-<label class="playerScore" id="rummy500_countLabel3">0</label>
-<button id="rummy500_addTenBtn3">+10</button>
-<button id="rummy500_addFiveBtn3">+5</button>
-<button id="rummy500_addOneBtn3">+1</button>
-<button id="rummy500_minusOneBtn3">-1</button>
-<button id="rummy500_minusFiveBtn3">-5</button>
-<button id="rummy500_minusTenBtn3">-10</button><br><br>
-
-
-<!-- <button id="rummy500_resetBtn4">Reset</button> -->
-<label>4</label>
-<input type="text" placeholder="Player Name">
-<label class="playerScore" id="rummy500_countLabel4">0</label>
-<button id="rummy500_addTenBtn4">+10</button>
-<button id="rummy500_addFiveBtn4">+5</button>
-<button id="rummy500_addOneBtn4">+1</button>
-<button id="rummy500_minusOneBtn4">-1</button>
-<button id="rummy500_minusFiveBtn4">-5</button>
-<button id="rummy500_minusTenBtn4">-10</button><br><br>
-
-
-<!-- template below-->
-<!-- <button id="rummy500_resetBtn5">Reset</button> -->
-<label>5</label>
-<input type="text" placeholder="Player Name">
-<label class="playerScore" id="rummy500_countLabel5">0</label>
-<button id="rummy500_addTenBtn5">+10</button>
-<button id="rummy500_addFiveBtn5">+5</button>
-<button id="rummy500_addOneBtn5">+1</button>
-<button id="rummy500_minusOneBtn5">-1</button>
-<button id="rummy500_minusFiveBtn5">-5</button>
-<button id="rummy500_minusTenBtn5">-10</button><br><br>
-
-
-<!-- template below-->
-<!-- <button id="rummy500_resetBtn6">Reset</button> -->
-<label>6</label>
-<input type="text" placeholder="Player Name">
-<label class="playerScore" id="rummy500_countLabel6">0</label>
-<button id="rummy500_addTenBtn6">+10</button>
-<button id="rummy500_addFiveBtn6">+5</button>
-<button id="rummy500_addOneBtn6">+1</button>
-<button id="rummy500_minusOneBtn6">-1</button>
-<button id="rummy500_minusFiveBtn6">-5</button>
-<button id="rummy500_minusTenBtn6">-10</button><br><br>
-
-<!-- template below-->
-<!-- <button id="rummy500_resetBtn7">Reset</button> -->
-<label>7</label>
-<input type="text" placeholder="Player Name">
-<label class="playerScore" id="rummy500_countLabel7">0</label>
-<button id="rummy500_addTenBtn7">+10</button>
-<button id="rummy500_addFiveBtn7">+5</button>
-<button id="rummy500_addOneBtn7">+1</button>
-<button id="rummy500_minusOneBtn7">-1</button>
-<button id="rummy500_minusFiveBtn7">-5</button>
-<button id="rummy500_minusTenBtn7">-10</button><br><br>
-
-<!-- template below-->
-<!-- <button id="rummy500_resetBtn8">Reset</button> -->
-<label>8</label>
-<input type="text" placeholder="Player Name">
-<label class="playerScore" id="rummy500_countLabel8">0</label>
-<button id="rummy500_addTenBtn8">+10</button>
-<button id="rummy500_addFiveBtn8">+5</button>
-<button id="rummy500_addOneBtn8">+1</button>
-<button id="rummy500_minusOneBtn8">-1</button>
-<button id="rummy500_minusFiveBtn8">-5</button>
-<button id="rummy500_minusTenBtn8">-10</button><br><br>
-
-<button id="rummy500_resetBtn"><strong>Reset Scores</strong></button>
-
-
-<!-- <script src="../scripts/Rummy500.js"></script> -->
-
-</div>
 
     </article>
     </main>
