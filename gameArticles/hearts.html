@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="/styleSheets/ArticleScoreboardCSS/hearts.css">
+    <script src="/scripts/hearts.js"></script>
     <link rel="stylesheet" type="text/css" href="/styleSheets/articles.css">
     <link rel="stylesheet" type="text/css" href="/styleSheets/header.css">
     <link rel="stylesheet" type="text/css" href="/styleSheets/emailbox.css">
@@ -87,6 +89,40 @@
         <p>Score is based on the cards in the tricks you take. Players get one point for each heart they take. The player who took
         the queen of spades gets 13 points. There is one exception, if a player takes every heart and the queen of the spades,
         it is known as “shooting the moon,” and that player receives no points and every other player receives 26 points.</p>
+
+        <section>
+            <div id="scoreboard-container">
+                <label>Player 1</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-one-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player1PlusThirteen()">+13</button>
+                <button class="scoreboard-buttons plus" onclick="player1PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player1MinusOne()">-1</button>
+                <br>
+                <label>Player 2</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-two-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player2PlusThirteen()">+13</button>
+                <button class="scoreboard-buttons plus" onclick="player2PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player2MinusOne()">-1</button>
+                <br>
+                <label>Player 3</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-three-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player3PlusThirteen()">+13</button>
+                <button class="scoreboard-buttons plus" onclick="player3PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player3MinusOne()">-1</button>
+                <br>
+                <label>Player 4</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-four-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player4PlusThirteen()">+13</button>
+                <button class="scoreboard-buttons plus" onclick="player4PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player4MinusOne()">-1</button>
+                <br>
+                <button id="reset-button" onclick="resetScore()">Reset Score</button>
+            </div>
+        </section>
 
         <h3>Additional Rules</h3> 
         <p>-The first trick must start with the two of clubs. During the first trick if a player does not have a club, they must
