@@ -172,6 +172,8 @@ font-size: 1.5vw;
 
 
 
+
+
 #home-oh-shoot-section {
     display: flex;
         width: 94%;
@@ -179,7 +181,7 @@ font-size: 1.5vw;
         margin-top: 10px;
         justify-content: space-evenly;
         align-items: center;
-        height: 300px;
+        /* height: 300px; */
         padding: 10px;
         background-image: linear-gradient(to right, #cdffd8, #94b9ff);
         border-radius: 25px;
@@ -207,7 +209,7 @@ font-size: 1.5vw;
     
 .oh-shoot-hands {
     max-width: 20%;
-    height: 80%;
+    height: 25vw;
 }
 
 @media only screen and (max-width: 815px) {
@@ -227,7 +229,13 @@ font-size: 1.5vw;
             margin-top: 5px;
         }
 
-        #home-oh-shoot-section {
+#home-oh-shoot-section {
+    width: 72%;
+    margin-left: 14%;
+}
+
+
+        /* #home-oh-shoot-section {
     display: flex;
     width: 76%;
     margin-left: 10%;
@@ -237,7 +245,7 @@ font-size: 1.5vw;
         .oh-shoot-hands {
     max-width: 15%;
     max-height: 80%;
-}
+} */
 }
 
 
