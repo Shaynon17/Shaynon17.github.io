@@ -212,28 +212,6 @@ font-size: 1.5vw;
     height: 25vw;
 }
 
-@media only screen and (max-width: 480px) {
-    main {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        margin-left: 10%;
-    }
-
-    #home-set-up-pic img {
-        width: 100px;
-    }
-
-        #home-scoreboards p {
-            margin-bottom: 10px;
-            margin-top: 5px;
-        }
-
-#home-oh-shoot-section {
-    width: 72%;
-    margin-left: 14%;
-}
-
 
         /* #home-oh-shoot-section {
     display: flex;
@@ -246,7 +224,7 @@ font-size: 1.5vw;
     max-width: 15%;
     max-height: 80%;
 } */
-}
+
 
 
 /* Below is CSS for oh shoot play button */
@@ -323,4 +301,28 @@ font-size: 1.5vw;
 .play-button:hover {
     opacity: 0.9;
     font-size: 50%;
+}
+
+@media only screen and (max-device-width: 480px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #home-set-up-pic img {
+        width: 100px;
+    }
+
+    #home-scoreboards p {
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    #home-oh-shoot-section {
+        width: 72%;
+        margin-left: 14%;
+    }
+
 }
