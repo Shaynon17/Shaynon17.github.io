@@ -700,7 +700,7 @@ const shootMedium = () => {
 }
 
 const shoot = () => {
-    document.getElementById('leftHand').src = "ohShootPictures/leftShoot.png";
+    document.getElementById('leftHand').src = "ohShootPictures/LeftShoot.png";
     gameMode.moves += 1;
     if (gameMode.difficulty === "Easy") {
         shootEasy();
