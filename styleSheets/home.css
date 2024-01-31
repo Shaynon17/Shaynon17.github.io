@@ -374,7 +374,7 @@ main {
     }
 
     .non-title-sections {
-        height: 200px;
+        min-height: 200px;
         margin: 2vw 0;
     }
 

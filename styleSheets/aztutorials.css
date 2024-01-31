@@ -37,7 +37,8 @@
 }
 
 .content_table a:hover {
-    font-size: 125%;
+    opacity: 0.6;
+    font-weight: 100;
 }
 
 .content_table th:first-child {
