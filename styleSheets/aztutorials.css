@@ -81,6 +81,23 @@
     text-decoration: underline;
 }
 
+
+@media only screen and (max-device-width: 480px) {
+    .aztutorials h1 {
+        font-size: 3.25vw;
+    }
+    
+    .aztutorials p {
+        font-size: 3vw;
+    }
+
+   .aztutorials h2 {
+       font-size: 2.5vw;
+   }
+
+}
+
+
 /*below is to make every other row gray */
 /* .content-table tbody tr:nth-of-type(even){
     background-color: #f3f3f3;
