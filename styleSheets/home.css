@@ -382,6 +382,11 @@ main {
         margin: 2vw 0;
     }
 
+    .non-title-sections h2 {
+        font-size: 2rem;   
+    }
+
+
     #az-tutorials {
         width: 70%;
         margin: auto;
@@ -394,6 +399,10 @@ main {
 
     #home-set-up-pic img {
         width: 20%;
+    }
+
+    #home-youtube-section p {
+        height: 90%;
     }
 
     #home-scoreboards p {
