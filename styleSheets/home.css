@@ -303,7 +303,7 @@ margin-left: 10px;
     font-size: 50%;
 }
 
-@media only screen and (max-width: 680px) {
+/* @media only screen and (max-width: 680px) {
     main {
         display: flex;
         flex-direction: column;
@@ -325,6 +325,44 @@ margin-left: 10px;
         margin-left: 14%;
     }
 
+} */
+
+
+@media only screen and (max-width: 680px) {
+main {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    /* .non-title-sections {
+        height: 200px;
+    } */
+
+    #az-tutorials {
+        width: 70%;
+        margin: auto;
+        margin-top: 1.5vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
+    #home-set-up-pic img {
+        width: 20%;
+    }
+
+    #home-scoreboards p {
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    #home-oh-shoot-section {
+        width: 72%;
+        margin-left: 14%;
+    }
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -335,8 +373,23 @@ margin-left: 10px;
         margin-left: 10%;
     }
 
+    .non-title-sections {
+        height: 200px;
+        margin: 15px 0;
+    }
+
+    #az-tutorials {
+        width: 70%;
+        margin: auto;
+        margin-top: 1.5vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
     #home-set-up-pic img {
-        width: 100px;
+        width: 20%;
     }
 
     #home-scoreboards p {
