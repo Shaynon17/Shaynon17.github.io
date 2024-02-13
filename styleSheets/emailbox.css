@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.email-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-form {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    padding-bottom: 5px;
+    box-shadow: 10px 10px 8px #888888;
+    border: 2px solid black;
+    max-width: 50%;
+}
+
+.sub-form h3 {
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5vw;
+}
+
+.newsPaper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.newsPaper img {
+    max-width: 30%;
+}
+
+.sub-form p {
+    font-size: 1.75vw;
+}
+
+.sub-form ul {
+        text-align: center;
+}
+
+.sub-form li {
+    font-size: 1.5vw;
+    margin-left: 3px;
+}
+
+.input-box {
+    font-size: 1vw;
+}
+
+#sign-up-btn {
+    font-size: 1vw;
+    border: 2px black;
+    border-radius: 8px;
+    padding: 3px 3px;
+    box-shadow: 1px 1px 10px #888888 inset;
+    border: 1px solid black;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 5px;
+}
+
+#sign-up-btn:hover {
+    cursor: pointer;
+    border-radius: 16px;
+    color:gray;
+}

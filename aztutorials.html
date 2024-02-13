@@ -1,40 +1,51 @@
 <!DOCTYPE html>
-<!-- to open in browser, go to files > coding > and open websitepractice.html 
-or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browser-->
+
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="/styleSheets/header.css">
+    <link rel="stylesheet" type="text/css" href="/styleSheets/aztutorials.css">
+    <link rel="stylesheet" type="text/css" href="/styleSheets/footer.css">
+    <link rel="stylesheet" type="text/css" href="/styleSheets/emailbox.css">
     <title>A-Z Tutorial Index - Practical Gaming Center</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/azTutorials.js"></script>
 </head>
 
+<!-- Google tag (gtag.js) Must stay immediateley after the <head> element -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R1EFJ0CZDT"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-R1EFJ0CZDT');
+</script>
+
+
 <body>
-    <div class="header">
-        <div class="inner_header">
-            <div class="logo_container">
-                <h1>Practical<span>GamingCenter</span></h1>
-            </div>
-            <ul class="navigation">
-                <a href="index.html">
-                    <li>Home</li>
-                </a>
-                <a href="aztutorials.html">
-                    <li>A-Z Tutorials</li>
-                </a>
-                <a rel="nofollow" target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=3R6SK3PHRWMT8">
-                    <li><span class="donate_button">DONATE</span></li>
-                </a>
-                <li></li>
-                <!-- <a href="shop.html">
-                    <li>Shop</li>
-                </a> -->
-            </ul>
-        </div>
-    </div>
-    <div class="aztutorials">
-        <h1 id="top_of_index">Alphabetical Index of Card Games</h1>
+<!-- Below is the html for the header -->
+<header>
+    <p class="site-name">PracticalGamingCenter</p>
+    <nav>
+        <ul>
+            <li id="header-az-tutorials"><a href="aztutorials.html">A-Z Tutorials</a></li>
+            <li id="header-home"><a href="index.html">Home</a></li>
+            <li id="header-tools"><a href="tools.html">Tools</a></li>
+            <li id="header-contact"><a href="contact.html">Contact</a></li>
+            <li id="header-shop"><a href="shop.html">Shop</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- Above is the html for the header -->
+
+    <main>
+        <section class="aztutorials">
+        <h1>Alphabetical Index of Card Games</h1>
         <br>
-        <div> <!-- Hyper linked letters -->
+        <div> 
+            <!-- Hyper linked letters -->
             <p>
                 <!-- just CAP the linked lettered lines to the unlinked letterd lines,
                 replace the letters with the correct letter,
@@ -43,487 +54,1360 @@ or CAP file:///home/shaynon17/coding/nodejstest/websitepractice.html into browse
                 <a class="hyper_linked_letters" href="#a">A</a>
                 <a class="hyper_linked_letters" href="#b">B</a>
                 <a class="hyper_linked_letters" href="#c">C</a>
-                D 
+                <a class="hyper_linked_letters" href="#d">D</a>
                 <a class="hyper_linked_letters" href="#e">E</a>
-                F 
+                <a class="hyper_linked_letters" href="#f">F</a>
                 <a class="hyper_linked_letters" href="#g">G</a>
                 <a class="hyper_linked_letters" href="#h">H</a>
                 <a class="hyper_linked_letters" href="#i">I</a>
                 <a class="hyper_linked_letters" href="#j">J</a>
                 <a class="hyper_linked_letters" href="#k">K</a>
-                L 
+                <a class="hyper_linked_letters" href="#l">L</a>
                 <a class="hyper_linked_letters" href="#m">M</a>
                 <a class="hyper_linked_letters" href="#n">N</a>
                 <a class="hyper_linked_letters" href="#o">O</a>
                 <a class="hyper_linked_letters" href="#p">P</a>
-                Q 
+                Q
                 <a class="hyper_linked_letters" href="#r">R</a>
                 <a class="hyper_linked_letters" href="#s">S</a>
-                T 
-                U
-                V 
+                <a class="hyper_linked_letters" href="#t">T</a>
+                <a class="hyper_linked_letters" href="#u">U</a>
+                <a class="hyper_linked_letters" href="#v">V</a>
                 <a class="hyper_linked_letters" href="#w">W</a>
-                X
-                Y
-                Z
+                <a class="hyper_linked_letters" href="#x">X</a>
+                <a class="hyper_linked_letters" href="#y">Y</a>
+                <a class="hyper_linked_letters" href="#z">Z</a>
             </p>
-        </div> <br> 
+        </div> <br>
+
         <div class="grow_the_library">
-        <h2>Help Grow the Library</h2> <br>
-        <p>This library is for everyone and is a work in progress <br>
-            If you would like to contribute, please email <br> 
-            practicalgamingcenter@yahoo.com </p><br>
-            <!-- See about putting a submit form here instead of email -->
-            <h3>Types of contributions</h3> <br>
-        <ul>
-            <li>-New games that are not on this site.</li>
-            <li>-Variations of any games on this site.</li>
-            <li>-Errors of any kind, especially of game mechanics.</li>
-            <li>-Features you would like implemented on this site.</li>
-        </ul>
+            <h2>Learn how you can help grow this library <a href="contact.html"><em>here.</em></a></h2> <br>
         </div>
-        </div>
-<!--A-Z TABLE-->
+        </section>
+        <!-- <button onclick='singlePlayer()' >
+            Solitaire
+        </button><br><br>
+        <button onclick=' twoPlayer()'>
+            2 Player
+        </button><br><br>
+        <button onclick='reset()'>
+            Reset
+        </button> -->
+
+        <!--A-Z TABLE-->
         <table class="content_table">
-<!--A-->
-            <tr>
-            <th class="table_letter" scope="row"><a id="a">A</a></th>
-           </tr>
-            <tr class="table_head">
-                <th></th>
+            <!--A-->
+
+<!--   -I also need to make my letters that jump to a specific point in my page match up better when i jump,
+     it doesnt match up now because of the new jump-->
+         
+            <tr class="table_head solitaire twoPlayer ">
+                <th class="table_letter" scope="row" id="a">A</th>
                 <th scope="col">Game</th>
                 <th scope="col">Players</th>
                 <th scope="col">Type</th>
                 <th scope="col">Supplies</th>
             </tr>
             <!-- <tr>
-                <th></th>
-                <th scope="row"><a href="gameArticles/aaTutorialTemplate.html">Tutorial Template</a></th>
+                <td></td>
+                <th scope="row"><a href="how-to-play/aaTutorialTemplate.html">Tutorial Template</a></th>
                 <td>#</td>
                 <td>XXXX</td>
-                <td>X deck</td>
-            
+                <td>X Deck</td>
             </tr> -->
 
+            <tr class="solitaire">
+                <td></td>
+                <th scope="row"><a href="how-to-play/above-and-below-solitaire.html">Above and Below </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
             </tr>
-        <tr>
-        <th></th>
-        <th scope="row"><a href="gameArticles/accordion.html">Accordion Solitaire</a></th>
-        <td>1</td>
-        <td>Solitaire</td>
-        <td>1 deck</td>
-        </tr>
-        <tr>
-            <th></th>
-            <th scope="row"><a href="gameArticles/armyAnts.html">Army Ants</a></th>
-            <td>2</td>
-            <td>Strategy</td>
-            <td>1 deck</td>
-        </tr>
-       
 
-<!--B-->
-
-<tr>
-    <th class="table_letter" scope="row"><a id="b">B</a></th>
-</tr>
-<tr class="table_head">
-    <th></th>
-    <th scope="col">Game</th>
-    <th scope="col">Players</th>
-    <th scope="col">Type</th>
-    <th scope="col">Supplies</th>
-</tr>
-<tr>
-    <td></td>
-    <th scope="row"><a href="gameArticles/bakersDozen.html" >Bakers Dozen</a></th>
-    <td>1</td>
-    <td>Solitare</td>
-    <td>1 deck</td>
-
-</tr>
-<tr>
-<td></td>
-<th  scope="row"><a href="gameArticles/beehiveSolitaire.html" >Beehive Solitaire</a></th>
-    <td>1</td>
-    <td>Solitaire</td>
-    <td>1 deck</td>
-</tr>
-
-<tr>
-    <td></td>
-    <th scope="row"><a href="gameArticles/beggarMyNeighbor.html">Beggar My Neighbor</a></th>
-    <td>2+</td>
-    <td>Chance</td>
-    <td>1 deck</td>
-</tr>
-
-<!--C-->
-<tr>
-    <th class="table_letter" scope="row"><a id="c">C</a></th>
-</tr>
-<tr class="table_head">
-    <th></th>
-    <th scope="col">Game</th>
-    <th scope="col">Players</th>
-    <th scope="col">Type</th>
-    <th scope="col">Supplies</th>
-</tr>
-<tr>
-    <td></td>
-    <th scope="row"><a href="gameArticles/canfield.html">Canfield Solitaire</a></th>
-    <td>1</td>
-    <td>Solitaire</td>
-    <td>1 deck</td>
-</tr>
-<tr>
-    <td></td>
-    <th scope="row"><a href="gameArticles/cardBingo.html">Card Bingo</a></th>
-    <td>2-10</td>
-    <td>Matching</td>
-    <td>2 decks</td>
-</tr>
-
-<!--D-->
-<!--E-->
-
-<tr>
-    <th class="table_letter" scope="row"><a id="e">E</a></th>
-</tr>
-<tr class="table_head">
-    <th></th>
-    <th scope="col">Game</th>
-    <th scope="col">Players</th>
-    <th scope="col">Type</th>
-    <th scope="col">Supplies</th>
-</tr>
-
-<tr>
-    <td></td>
-    <th scope="row"><a href="gameArticles/egyptianRatScrew.html">Egyptian Rat Screw (ERS)</a></th>
-    <td>2+</td>
-    <td>War</td>
-    <td>1 deck</td>
-</tr>
-
-<tr>
-    <td></td>
-    <th scope="row"><a href="gameArticles/elevens.html">Elevens</a></th>
-    <td>1</td>
-    <td>Solitaire</td>
-    <td>1 deck</td>
-</tr>
-
-<!--F-->
-<!--G-->
-
-<tr>
-    <th class="table_letter" scope="row"><a id="g">G</a></th>
-</tr>
-<tr class="table_head">
-    <th></th>
-    <th scope="col">Game</th>
-    <th scope="col">Players</th>
-    <th scope="col">Type</th>
-    <th scope="col">Supplies</th>
-</tr>
-
-<tr>
-    <td></td>
-    <th scope="row"><a href="gameArticles/goFish.html">Go Fish</a></th>
-    <td>2+</td>
-    <td>Matching</td>
-    <td>1 deck</td>
-</tr>
-
-<!--H-->
-<tr>
-    <th class="table_letter" scope="row"><a id="h">H</a></th>
-</tr>
-<tr class="table_head">
-    <th></th>
-    <th scope="col">Game</th>
-    <th scope="col">Players</th>
-    <th scope="col">Type</th>
-    <th scope="col">Supplies</th>
-</tr>
-
-<tr>
-    <td></td>
-    <th scope="row"><a href="gameArticles/hearts.html">Hearts</a></th>
-    <td>4</td>
-    <td>Trick-taking</td>
-    <td>1 deck</td>
-</tr>
-
-<!--I-->
-
-<tr>
-    <th class="table_letter" scope="row"><a id="i">I</a></th>
-</tr>
-<tr class="table_head">
-    <th></th>
-    <th scope="col">Game</th>
-    <th scope="col">Players</th>
-    <th scope="col">Type</th>
-    <th scope="col">Supplies</th>
-</tr>
-
-<tr>
-    <td></td>
-    <th scope="row"><a href="gameArticles/iDoubtIt.html">I Doubt It</a></th>
-    <td>2+</td>
-    <td>Bluffing</td>
-    <td>1 deck</td>
-</tr>
-
-<!--J-->
-
-<tr>
-    <th class="table_letter" scope="row"><a id="j">J</a></th>
-</tr>
-<tr class="table_head">
-    <th></th>
-    <th scope="col">Game</th>
-    <th scope="col">Players</th>
-    <th scope="col">Type</th>
-    <th scope="col">Supplies</th>
-</tr>
-
-<tr>
-    <td></td>
-    <th scope="row"><a href="gameArticles/jamesBond.html">James Bond</a></th>
-    <td>2-4, 6</td>
-    <td>Matching</td>
-    <td>1 deck</td>
-</tr>
-
-<!--K-->
-
-<tr>
-    <th class="table_letter" scope="row"><a id="k">K</a></th>
-</tr>
-<tr class="table_head">
-    <th></th>
-    <th scope="col">Game</th>
-    <th scope="col">Players</th>
-    <th scope="col">Type</th>
-    <th scope="col">Supplies</th>
-</tr>
-
-<tr>
-    <td></td>
-    <th scope="row"><a href="gameArticles/kingsInTheCorner.html">Kings in the Corner</a></th>
-    <td>2-4</td>
-    <td>Patience</td>
-    <td>1 deck, paper and pen</td>
-</tr>
-
-<!--L-->
-<!--M-->
-
-<tr>
-    <th class="table_letter" scope="row"><a id="m">M</a></th>
-</tr>
-<tr class="table_head">
-    <th></th>
-    <th scope="col">Game</th>
-    <th scope="col">Players</th>
-    <th scope="col">Type</th>
-    <th scope="col">Supplies</th>
-</tr>
-
-<tr>
-    <td></td>
-    <th scope="row"><a href="gameArticles/memory.html">Memory</a></th>
-    <td>2+</td>
-    <td>Matching</td>
-    <td>1 deck</td>
-</tr>
-
-<!--N-->
-
-<tr>
-    <th class="table_letter" scope="row"><a id="n">N</a></th>
-</tr>
-<tr class="table_head">
-    <th></th>
-    <th scope="col">Game</th>
-    <th scope="col">Players</th>
-    <th scope="col">Type</th>
-    <th scope="col">Supplies</th>
-</tr>
-
-<tr>
-    <td></td>
-    <th scope="row"><a href="gameArticles/ninetyNine.html">Ninety-Nine</a></th>
-    <td>2+</td>
-    <td>Addition</td>
-    <td>1 deck, 3 tokens per player</td>
-</tr>
-
-<!--O-->
-
-<tr>
-    <th class="table_letter" scope="row"><a id="o">O</a></th>
-</tr>
-<tr class="table_head">
-    <th></th>
-    <th scope="col">Game</th>
-    <th scope="col">Players</th>
-    <th scope="col">Type</th>
-    <th scope="col">Supplies</th>
-</tr>
-
-<tr>
-    <td></td>
-    <th scope="row"><a href="gameArticles/oldMaid.html">Old Maid</a></th>
-    <td>2+</td>
-    <td>Matching</td>
-    <td>1 deck</td>
-</tr>
-
-<!--P-->
-
-<tr>
-    <th class="table_letter" scope="row"><a id="p">P</a></th>
-</tr>
-<tr class="table_head">
-    <th></th>
-    <th scope="col">Game</th>
-    <th scope="col">Players</th>
-    <th scope="col">Type</th>
-    <th scope="col">Supplies</th>
-</tr>
-
-<tr>
-    <td></td>
-    <th scope="row"><a href="gameArticles/playOrPay.html">Play or Pay</a></th>
-    <td>2+</td>
-    <td>Sequence</td>
-    <td>1+ deck(s), tokens</td>
-</tr>
-
-<!--Q-->
-<!--R-->
-
-<tr>
-    <th class="table_letter" scope="row"><a id="r">R</a></th>
-</tr>
-<tr class="table_head">
-    <th></th>
-    <th scope="col">Game</th>
-    <th scope="col">Players</th>
-    <th scope="col">Type</th>
-    <th scope="col">Supplies</th>
-</tr>
-
-<tr>
-    <td></td>
-    <th scope="row"><a href="gameArticles/rummy500.html">Rummy500</a></th>
-    <td>2-8</td>
-    <td>Rummy</td>
-    <td>1+ deck(s), paper and pen</td>
-</tr>
-
-<!--S-->
-
-<tr>
-    <th class="table_letter" scope="row"><a id="s">S</a></th>
-</tr>
-<tr class="table_head">
-    <th></th>
-    <th scope="col">Game</th>
-    <th scope="col">Players</th>
-    <th scope="col">Type</th>
-    <th scope="col">Supplies</th>
-</tr>
-
-<tr>
-    <td></td>
-    <th scope="row"><a href="gameArticles/spoons.html">Spoons</a></th>
-    <td>2+</td>
-    <td>Matching</td>
-    <td>1 deck</td>
-</tr>
-
-<!--T-->
-<!--U-->
-<!--V-->
-<!--W-->
-
-<tr>
-    <th class="table_letter" scope="row"><a id="w">W</a></th>
-</tr>
-<tr class="table_head">
-    <th></th>
-    <th scope="col">Game</th>
-    <th scope="col">Players</th>
-    <th scope="col">Type</th>
-    <th scope="col">Supplies</th>
-</tr>
-
-<tr>
-    <td></td>
-    <th scope="row"><a href="gameArticles/war.html">War</a></th>
-    <td>2</td>
-    <td>War</td>
-    <td>1 deck</td>
-</tr>
-
-<!--X-->
-<!--Y-->
-<!--Z-->
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/accordion-solitaire.html">Accordion </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
 
 
+            <tr class="solitaire">
+                <td></td>
+                <th scope="row"><a href="how-to-play/aces-and-kings-solitaire.html">Aces and Kings </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
 
+
+            <tr class="solitaire">
+                <th><a href="https://www.youtube.com/watch?v=cmBrOC2lDyE&t" target="_blank"><i
+                            class="fa fa-youtube-play" style="font-size:4vw;color:red"></i></a></th>
+                <th scope="row"><a href="how-to-play/aces-up-solitaire.html">Aces Up </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/agnes-solitaire.html">Agnes </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr class="twoPlayer">
+                <td></td>
+                <th scope="row"><a href="how-to-play/agram.html">Agram</a></th>
+                <td>2-5</td>
+                <td>Trick-Taking</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/algerian-solitaire.html">Algerian </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/alhambra-solitaire.html">Alhambra </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/ali-baba-solitaire.html">Ali Baba</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/alternations-solitaire.html">Alternations </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/alternative-solitaire.html">Alternative </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td><a href="https://youtu.be/v69Lf-EaOpY?si=dNMYzvzdwHY_zSdT" target="_blank"><i class="fa fa-youtube-play"
+                        style="font-size:4vw;color:red"></i></a></td>
+                <th scope="row"><a href="how-to-play/amazons-solitaire.html">Amazons</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/american-toad-solitaire.html">American Toad </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/ants-solitaire.html">Ants</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/arizona-solitaire.html">Arizona</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/army-ants.html">Army Ants</a></th>
+                <td>2</td>
+                <td>Strategy</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/auld-lang-syne-solitaire.html">Auld Lang Syne </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/aunt-mary-solitaire.html">Aunt Mary </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/avenue-solitaire.html">Avenue </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <!--B-->
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="b">B</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/baby-spiderette-solitaire.html">Baby Spiderette </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/backhand.html">Backhand</a></th>
+                <td>2+</td>
+                <td>Betting</td>
+                <td>1+ Deck(s)</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/bakers-dozen-solitaire.html">Bakers Dozen</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/bakers-game-solitaire.html">Bakers Game </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/bakers-game-two-deck-solitaire.html">Bakers Game Two Deck </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/baroness-solitaire.html">Baroness </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/barricade-a-solitaire.html">Barricade A </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/barricade-b-solitaire.html">Barricade B </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/barrier-solitaire.html">Barrier </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/base-pyramid-solitaire.html">Base Pyramid </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/batsford-solitaire.html">Batsford </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/beehive-solitaire.html">Beehive </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/beetle-solitaire.html">Beetle </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/beggar-my-neighbor.html">Beggar My Neighbor</a></th>
+                <td>2+</td>
+                <td>Chance</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/beleaguered-castle-solitaire.html">Beleaguered Castle</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/beleaguered-castle-ii-solitaire.html">Beleaguered Castle II</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/big-ben-solitaire.html">Big Ben</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/big-forty-solitaire.html">Big Forty</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/big-freecell-solitaire.html">Big FreeCell</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/bisley-solitaire.html">Bisley </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <th><a href="https://www.youtube.com/watch?v=vba_U6gepB8" target="_blank"><i class="fa fa-youtube-play"
+                    style="font-size:4vw;color:red"></i></a></th>
+                <th scope="row"><a href="how-to-play/black-hole-solitaire.html">Black Hole </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/blind-alleys-solitaire.html">Blind Alleys </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/blind-hookey-solitaire.html">Blind Hookey </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/blind-patience-solitaire.html">Blind Patience </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/blitz.html">Blitz</a></th>
+                <td>2+</td>
+                <td>Elimination</td>
+                <td>1 Deck, 4 Tokens per Player</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/blockade-solitaire.html">Blockade</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.youtube.com/watch?v=0RbTQ-USCzM&t" target="_blank"><i
+                            class="fa fa-youtube-play" style="font-size:4vw;color:red"></i></a>
+                </td>
+                <th scope="row"><a href="how-to-play/block-eleven-solitaire.html">Block Eleven </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/block-ten-solitaire.html">Block Ten </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/blondes-and-brunettes-solitaire.html">Blondes and Brunettes</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/box-kite-solitaire.html">Box Kite</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/british-square-solitaire.html">British Square</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <!--C-->
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="c">C</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/calculation-solitaire.html">Calculation</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/candy-man.html">Candyman</a></th>
+                <td>4+</td>
+                <td>Hidden Identity</td>
+                <td>1 Deck</td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/canfield-solitaire.html">Canfield </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/canister-solitaire.html">Canister </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/card-bingo.html">Card Bingo</a></th>
+                <td>2-10</td>
+                <td>Matching</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/card-dominoes.html">Card Dominoes</a></th>
+                <td>3-8</td>
+                <td>Sequence</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/carlton-solitaire.html">Carlton</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/carpet-solitaire.html">Carpet</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/castle-solitaire.html">Castle</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/cats-cradle-solitaire.html">Cat's Cradle</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/chessboard-solitaire.html">Chessboard</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/colours-solitaire.html">Colours</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/contradance-solitaire.html">Contradance </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/crazy-eights.html">Crazy Eights</a></th>
+                <td>2+</td>
+                <td>Shedding</td>
+                <td>2 Decks, Paper & Pen</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/criss-cross-solitaire.html">Criss Cross </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <!--D-->
+
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="d">D</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/double-easthaven-solitaire.html">Double Easthaven </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/double-fourteens-solitaire.html">Double Fourteens </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/double-klondike-solitaire.html">Double Klondike </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/double-nestor-solitaire.html">Double Nestor </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/downhill-solitaire.html">Downhill </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <!--E-->
+
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="e">E</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/easthaven-solitaire.html">EastHaven </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/egyptian-rat-screw.html">Egyptian Rat Screw (ERS)</a></th>
+                <td>2+</td>
+                <td>War</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/eight-cards-solitaire.html">Eight Cards </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/elevens-solitaire.html">Elevens</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <!--F-->
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="f">F</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/forehead-poker.html">Forehead Poker </a></th>
+                <td>2+</td>
+                <td>Bluffing</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/fourteen-out-solitaire.html">Fourteen Out </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/fourteens-solitaire.html">Fourteens </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <th><a href="https://www.youtube.com/watch?v=WamNcZ4URT8" target="_blank"><i class="fa fa-youtube-play"
+                            style="font-size:4vw;color:red"></i></a></th>
+                <th scope="row"><a href="how-to-play/frustration-solitaire.html">Frustration</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+            <!--G-->
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="g">G</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/go-boom.html">Go Boom</a></th>
+                <td>2-7</td>
+                <td>Trick-Taking</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/go-fish.html">Go Fish</a></th>
+                <td>2+</td>
+                <td>Matching</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <!--H-->
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="h">H</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/heads-and-tails-solitaire.html">Heads and Tails </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/hearts.html">Hearts</a></th>
+                <td>4</td>
+                <td>Trick-Taking</td>
+                <td>1 Deck, paper/pen</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/hit-or-miss-solitaire.html">Hit or Miss</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/hockey.html">Hockey</a></th>
+                <td>4</td>
+                <td>Fishing</td>
+                <td>1 Deck, paper/pen</td>
+            </tr>
+
+            <!--I-->
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="i">I</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/i-doubt-it.html">I Doubt It</a></th>
+                <td>2+</td>
+                <td>Bluffing</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/indian-solitaire.html">Indian </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/intrigue-solitaire.html">Intrigue </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+
+            <!--J-->
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="j">J</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/james-bond.html">James Bond</a></th>
+                <td>2-4, 6</td>
+                <td>Matching</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <!--K-->
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="k">K</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/kings-in-the-corner.html">Kings in the Corner</a></th>
+                <td>2-4</td>
+                <td>Patience</td>
+                <td>1 Deck, paper/pen</td>
+            </tr>
+
+            <!--L-->
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="l">L</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/leopard.html">Leopard</a></th>
+                <td>2</td>
+                <td>Layout</td>
+                <td>2 Decks, Paper + Pen</td>
+            </tr>
+
+
+            <!--M-->
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="m">M</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/memory.html">Memory</a></th>
+                <td>2+</td>
+                <td>Matching</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <!--N-->
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="n">N</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/nestor-solitaire.html">Nestor </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/ninety-nine.html">Ninety-Nine</a></th>
+                <td>2+</td>
+                <td>Addition</td>
+                <td>1 Deck, 3 Tokens per Player</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/number-ten-solitaire.html">Number Ten </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <!--O-->
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="o">O</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="ohShoot/oh-shoot.html" >Oh Shoot!</a></th>
+                <td>1</td>
+                <td>Computer</td>
+                <td>N/A</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/old-maid.html">Old Maid</a></th>
+                <td>2+</td>
+                <td>Matching</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <!--P-->
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="p">P</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/pas-seul-solitaire.html">Pas Seul </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/play-or-pay.html">Play or Pay</a></th>
+                <td>3+</td>
+                <td>Sequence</td>
+                <td>1+ Deck(s), tokens</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/pyramid-solitaire.html">Pyramid </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <!--Q-->
+
+
+            <!--R-->
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="r">R</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/rat-a-tat-tat.html">Rat A Tat Tat</a></th>
+                <td>2-4</td>
+                <td>Memory</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/rolling-stone.html">Rolling Stone</a></th>
+                <td>4</td>
+                <td>Trick-Taking</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/rummy-500.html">Rummy 500</a></th>
+                <td>2-8</td>
+                <td>Rummy</td>
+                <td>1+ Deck(s), paper/pen</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/russi.html">Russi</a></th>
+                <td>2</td>
+                <td>Trick-Taking</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <!--S-->
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="s">S</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/salic-law-solitaire.html">Salic Law </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/salute-the-king.html">Salute The King</a></th>
+                <td>3+</td>
+                <td>War</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <!-- <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/sevens.html">Sevens</a></th>
+                <td>3-8</td>
+                <td>Sequence</td>
+                <td>1 Deck</td>
+            </tr> -->
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/simple-addition-solitaire.html">Simple Addition </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/simple-pairs-solitaire.html">Simple Pairs </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/simpleton-solitaire.html">Simpleton </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <th><a href="https://www.youtube.com/watch?v=ui-AYWjIM2k" target="_blank"><i class="fa fa-youtube-play"
+                    style="font-size:4vw;color:red"></i></a></th>
+                <th scope="row"><a href="how-to-play/simplex-solitaire.html">Simplex </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/snap.html">Snap</a></th>
+                <td>2-6</td>
+                <td>Matching</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/spoons.html">Spoons</a></th>
+                <td>2+</td>
+                <td>Matching</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <!--T-->
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="t">T</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/travellers-solitaire.html">Travellers </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <!--U-->
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="u">U</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/umtali.html">Umtali</a></th>
+                <td>2</td>
+                <td>Rummy</td>
+                <td>1 Deck, Paper & Pen</td>
+            </tr>
+
+            <!--V-->
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="v">V</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/vague-solitaire.html">Vague</a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/vertical-solitaire.html">Vertical </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <!--W-->
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="w">W</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/war.html">War</a></th>
+                <td>2</td>
+                <td>War</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <!--X-->
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="x">X</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/xeri.html">Xeri</a></th>
+                <td>2</td>
+                <td>Fishing</td>
+                <td>1 Deck</td>
+            </tr>
+
+            <!--Y-->
+
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="y">Y</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/yaniv.html">Yaniv</a></th>
+                <td>2-5</td>
+                <td>Rummy</td>
+                <td>1 Deck, Paper & Pen</td>
+            </tr>
+
+
+            <!--Z-->
+            <tr class="table_head">
+                <th class="table_letter" scope="row" id="z">Z</th>
+                <th scope="col">Game</th>
+                <th scope="col">Players</th>
+                <th scope="col">Type</th>
+                <th scope="col">Supplies</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <th scope="row"><a href="how-to-play/zigzag-course-solitaire.html">Zigzag Course </a></th>
+                <td>1</td>
+                <td>Solitaire</td>
+                <td>2 Decks</td>
+            </tr>
 
         </table>
-        <a href="#top_of_index" ><p>| | Back to top of page | |</p></a>
-        
-        
-        
-        
-        
-        
-        
-        <!-- <h2>A</h2>
-        <ul>
-           <a href="tutorialTemplate.html"> <li>tutorial template page</li></a>
-            <li>example game</li>
-            <li>example game</li>
-        </ul>
-        <h2>B</h2>
-        <ul>
-            <li>Battle Ship | Players: 2</li>
-            <li>example</li>
-            <li>example</li>
-        </ul>
-        <h2>C</h2>
-        <ul>
-            <li> example game</li>
-        </ul>
-        <h2>D</h2> -->
-    </div>
+
+    <a class="aztutorials" href="#top">
+        <p>^&nbspTop of Page&nbsp^</p>
+    </a>
+    </main>
+
+<div class="email-container">
+    <form class="sub-form"
+        action="https://yahoo.us21.list-manage.com/subscribe/post?u=0dd659d664538ef51a08b0fc1&amp;id=71e50d986f&amp;f_id=00e0fee1f0"
+        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+        novalidate>
+        <div id="mc_embed_signup_scroll">
+            <h3>Practical Gaming News Center</h3>
+            <div class="newsPaper">
+                <img src="../images/pgcNewsPaper.png">
+                <p>Sign up for a better game night experience!
+                    <br>-Get discounts for upcoming products
+                    <br>-Learn rules for unique card games
+                    <br>-Get tips on hosting game nights
+                </p>
+            </div>
+            <ul>
+                <li>
+                    <div class="mc-field-group">
+                        <label for="mce-EMAIL">
+                            Email:
+                        </label>
+                        <input type="email" value="" name="EMAIL" class="required email, input-box" id="mce-EMAIL"
+                            required>
+                    </div>
+                </li>
+                <li>
+                    <div id="mce-responses" class="clear foot">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>
+                </li>
+                <div>
+                    <li>
+                        <div class="mc-field-group">
+                            <label for="mce-FNAME">
+                                Name:
+                            </label>
+                            <input type="text" value="" name="FNAME" class="input-box" id="mce-FNAME">
+                            <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+            <input id="sign-up-btn" type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe"
+                class="button">
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                    name="b_0dd659d664538ef51a08b0fc1_71e50d986f" tabindex="-1" value=""></div>
+        </div>
+    </form>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script
+        type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+    <!--End mc_embed_signup-->
 </div>
 
-<div class="footer">
-
-    <h3>Contact</h3>
-    <p class="footer_email">PracticalGamingCenter@yahoo.com</p>
-    <ul>
-        <a rel="nofollow" rel="sponsored" target="_blank" href="https://www.etsy.com/shop/DigitalGamingCenter?coupon=HALFOFF">
-            <li class="footer_etsy">Etsy Store</li>
-        </a>
-        <a rel="nofollow" target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=3R6SK3PHRWMT8">
-            <button>
-                <li class="footer_donate">DONATE</li>
-            </button>
-        </a>
-    </ul>
-    <li class="bottom_of_page"></li>
-
-</div>
+    <footer>
+        <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a rel="nofollow" rel="sponsored" target="_blank"
+                    href="https://www.etsy.com/shop/DigitalGamingCenter?coupon=HALFOFF"><span id="etsy-store-text">Etsy
+                        Store</span></a></li>
+            <li class="footer_donate"><a rel="nofollow" target="_blank"
+                    href="https://www.paypal.com/donate/?hosted_button_id=3R6SK3PHRWMT8">Donate</a></li>
+        </ul>
+    </footer>
 
 </body>
+
 </html>

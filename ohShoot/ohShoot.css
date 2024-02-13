@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Below is for the rules box */
+/* ////////////////////////// */
+
+/* CSS to hide original labels for game */
+#original-labels {
+    display: none;
+}
+
+#rulesTitle {
+    display: none;
+    justify-content: space-evenly;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+#rulesBox {
+    display: none;
+    justify-content: space-around;
+}
+
+#rulesBox p {
+    font-size: 1.5vw;
+}
+
+
+#ruleSectionLeft {
+    margin: auto;
+    display: flex;
+    width: 30%;
+    /* background-color: red; */
+    flex-direction: column;
+}
+
+.ruleSectionLeftBoxs {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* background-color: blue; */
+}
+
+.ruleSectionLeftBoxs p {
+    width: 66%;
+    /* background-color: yellow; */
+}
+
+.ruleSectionLeftBoxs img {
+    width: 33%;
+}
+
+
+
+#ruleSectionRight {
+    margin: auto;
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    /* background-color: pink; */
+}
+
+#ruleSectionRight h1 {
+    font-size: 2.25vw;
+    text-align: center;
+}
+
+#ruleSectionRight h2 {
+    font-size: 2vw;
+}
+
+.rulesSRCards {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 10px;
+    container-type: inline-size;
+}
+
+
+.rulesSRCards h2 {
+    width: 15%;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+.normalRulesP {
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+
+#rulesPlayerCards {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* background-color: green; */
+}
+
+#rulesPlayerCards img {
+    width: 18%;
+}
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* above is for the rules box */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+#gradient {
+    background-image: linear-gradient(to right, #cdffd8, #94b9ff);
+}
+
+#ohShootTitle {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+
+#main {
+    /* margin-top: 80px; */
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    max-height: 300px;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    /* background-color: orangered; */
+}
+
+.mainYourCard {
+    min-width: 12%;
+    max-width: 12%;
+    padding: 10px 15px;
+    /* background-color: blueviolet; */
+}
+
+.mainYou {
+    min-width: 16%;
+    max-width: 16%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: yellow; */
+    /* align-content: space-between */
+}
+
+#leftBullet {
+    height: 30%;
+    width: 80%;
+}
+
+#leftCylinder {
+    height: 30%;
+    width: 50%;
+}
+
+
+/* .mainYouCard.img {
+   max-height: 100%;
+    max-width: 42%;
+} */
+
+.mainMenu {
+    padding: 40px;
+    min-width: 32%;
+    max-width: 32%;
+    text-align: center;
+    /* background-color: orange; */
+}
+
+.modeButtons {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 2%;
+    border-radius: 30%;
+    padding: 5px;
+    background-color: grey;
+    color: white;
+    font-size: 1.5vw;
+    border: 2px solid black;
+}
+
+.modeButtons:hover {
+    cursor: pointer;
+}
+
+
+.modeButtons:hover {
+    padding: 5px 7px;
+}
+
+#easyButton {
+    background-color: orange;
+}
+
+
+#mediumButton {
+    background-color: grey;
+}
+
+.movesMade {
+    margin-top: 5px;
+    font-size: 2vw;
+}
+
+
+/* 
+#easyButton:hover {
+padding: 5px 7px;
+}
+
+#mediumButton:hover {
+padding: 5px 7px;
+} */
+
+.comments {
+    font-size: 1.5vw;
+}
+
+.mainEnemy {
+    min-width: 16%;
+    max-width: 16%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#rightBullet {
+    height: 30%;
+    width: 80%;
+}
+
+#rightCylinder {
+    height: 30%;
+    width: 50%;
+}
+
+.mainEnemyCard {
+    min-width: 12%;
+    max-width: 12%;
+    padding: 10px 15px;
+    /* background-color: green; */
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+.playerEnemyChoice {
+    font-size: 2.5vw;
+}
+
+
+/* #playerCards {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+} */
+
+#playerCards {
+    display: flex;
+    height: 13vw;
+    width: 50vw;
+    margin-left: 25vw;
+}
+
+
+.actionCard {
+    width: 25vw;
+}
+
+.actionCard:hover {
+    opacity: 60%;
+    cursor: pointer;
+}
+
+/* Above is the CSS for the cards */
+/*/////////////////////////////////////////////////////*/
+/* Below is the CSS for the rules*/
+
+.rules {
+    margin-top: 10px;
+    text-align: center;
+}

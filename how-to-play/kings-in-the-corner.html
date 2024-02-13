@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/styleSheets/ArticleScoreboardCSS/kingsinthecorner.css">
+    <script src="/scripts/kingsInTheCorner.js"></script>
+    <link rel="stylesheet" type="text/css" href="/styleSheets/articles.css">
+    <link rel="stylesheet" type="text/css" href="/styleSheets/header.css">
+    <link rel="stylesheet" type="text/css" href="/styleSheets/emailbox.css">
+    <link rel="stylesheet" type="text/css" href="/styleSheets/footer.css">
+    <title>Kings in the Corner.Rules: How to play Kings in the Corner</title>
+    <!-- Fill in SEO ------------------------------------------------------------------->
+    <meta name="og:title" property="og:title" content="How to play Kings in the Corner">
+    <!-- Fill in SEO ----------- (this is the same as <h1> -------------------->
+    <meta name="description" content="Kings.in the Corner Rules: How to play Kings in the Corner">
+    <!-- Fill in SEO -------------------------------->
+</head>
+
+<!-- Google tag (gtag.js) Must stay immediateley after the <head> element -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1EFJ0CZDT"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-R1EFJ0CZDT');
+</script> -->
+
+
+<body>
+    <header>
+        <p class="site-name">PracticalGamingCenter</p>
+        <nav>
+            <ul>
+                <li id="header-az-tutorials"><a href="/aztutorials.html">A-Z Tutorials</a></li>
+                <li id="header-home"><a href="/index.html">Home</a></li>
+                <li id="header-tools"><a href="/tools.html">Tools</a></li>
+                <li id="header-contact"><a href="/contact.html">Contact</a></li>
+                <li id="header-shop"><a href="/shop.html">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="game">
+        <article>
+        <h1>How to Play Kings in the Corner</h1> 
+        <!--------------------- Fill in SEO ----------------------------------------------------------------------------->
+        <p class="pseo">Kings in the Corner is a solitaire-like patience card game for multiple people.</p> 
+        <!--------------------- Fill in SEO ------------------------------------------------------------------>
+      
+        <h2>Kings in the Corner Rules</h2>
+        <!--------------------- Fill in SEO -------------------------------------------------------------------------------->
+
+        <p class="players-type-supplies"><strong>| Players:</strong> 2-4
+            <strong>| Type:</strong> Patience
+            <strong>| Supplies:</strong> 1 Deck, Paper and Pen |
+        </p>
+
+        <h3>Objective</h3> 
+        <p>The objective of kings in the corner is to be the first player to play all their cards into the middle each round.</p>
+        
+
+        <h3>Deal</h3> 
+        <p>Each player is dealt seven cards, one card at a time. The remaining deck is placed in the middle.</p>
+
+        <h3>Setup</h3> 
+        <p>A card is flipped face up on all four sides of the deck. If a king is flipped up, the king is moved to the
+            corner of the
+            deck. If this happens, flip over a card to replace the empty spot.</p>
+
+        <figure>
+            <img src="../images/kingsInTheCornerSetup.png" alt="Kings in the Corner set up: card layout">
+            <!----------- Fill in SEO -------------->
+            <figcaption>Kings in the Corner set up</figcaption>
+            <!--------------------- Fill in SEO --------------------------------------------------------------------->
+        </figure> 
+
+        <h3>Card Rank</h3> 
+        <p>King is high. Ace is low.</p>
+
+        <h3>Game Play</h3> 
+        <p>The player left of the dealer is first to play. Every turn begins with the player drawing a card from the
+            center deck.
+            Cards can be played on the face up cards in the middle.
+            <br><br>
+            Cards are played in decreasing sequence with the opposite color suit. For example, a black ace can be played
+            on a red 2.
+            Players may play as many cards as they want each turn. Players announce they are done to end their turn.
+            Play continues
+            clockwise.
+            <br><br>
+            The kings start a new pile off the corners of the middle deck. An entire pile can be moved when the bottom
+            card of one
+            pile is eligible to be played on the top card of another pile. They are eligible by being one rank away in
+            an opposite
+            color. The open space left by the move can be filled with any card from your hand. When a player gets rid of
+            all of the
+            cards in their hand, the round is over.
+        </p>
+
+        <h3>Scoring</h3> 
+        <p>At the end of a round, players score ten points for each king left in their hand and one point for each other
+            card still
+            in their hand. The game can be played to any number of points. Play the first game to 25 points. When any
+            player reaches
+            25 points, the game is over. If you do not want to keep score, check out the variants.</p>
+
+        <section>
+            <div id="scoreboard-container">
+                <label>Player 1</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-one-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player1PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player1PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player1MinusOne()">-1</button>
+                <br>
+                <label>Player 2</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-two-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player2PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player2PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player2MinusOne()">-1</button>
+                <br>
+                <label>Player 3</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-three-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player3PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player3PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player3MinusOne()">-1</button>
+                <br>
+                <label>Player 4</label>
+                <input class="scoreboard-input" type="text" placeholder="Enter Name" />
+                <label id="player-four-score">0</label>
+                <button class="scoreboard-buttons plus" onclick="player4PlusTen()">+10</button>
+                <button class="scoreboard-buttons plus" onclick="player4PlusOne()">+1</button>
+                <button class="scoreboard-buttons minus" onclick="player4MinusOne()">-1</button>
+                <br>
+                <button id="reset-button" onclick="resetScore()">Reset Score</button>
+            </div>
+        </section>
+
+
+        <h3>Winner</h3> 
+        <p>When any player reaches 25 points, the game is over. The player with the least amount of points at the end of
+            the game
+            is the winner.</p>
+
+        <h3>Variants</h3> 
+        <p>If you do not want to keep score, you can play to where the player who gets rid of all of their cards is the
+            winner.
+            When the score is not kept, kings are not allowed to stay in your hand. If you start with one in your
+            starting hand, you
+            must play it at the start of your turn. If you draw a king, you must play it immediately.</p>
+
+    </article>
+    </main>
+    
+    <div class="email-container">
+        <form class="sub-form"
+            action="https://yahoo.us21.list-manage.com/subscribe/post?u=0dd659d664538ef51a08b0fc1&amp;id=71e50d986f&amp;f_id=00e0fee1f0"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+            novalidate>
+            <div id="mc_embed_signup_scroll">
+                <h3>Practical Gaming News Center</h3>
+                <div class="newsPaper">
+                    <img src="../images/pgcNewsPaper.png">
+                    <p>Sign up for a better game night experience!
+                        <br>-Get discounts for upcoming products
+                        <br>-Learn rules for unique card games
+                        <br>-Get tips on hosting game nights
+                    </p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL">
+                                Email:
+                            </label>
+                            <input type="email" value="" name="EMAIL" class="required email, input-box" id="mce-EMAIL"
+                                required>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="mce-responses" class="clear foot">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                    </li>
+                    <div>
+                        <li>
+                            <div class="mc-field-group">
+                                <label for="mce-FNAME">
+                                    Name:
+                                </label>
+                                <input type="text" value="" name="FNAME" class="input-box" id="mce-FNAME">
+                                <span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+                <input id="sign-up-btn" type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe"
+                    class="button">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                        name="b_0dd659d664538ef51a08b0fc1_71e50d986f" tabindex="-1" value=""></div>
+            </div>
+        </form>
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+        <script
+            type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+        <!--End mc_embed_signup-->
+    </div>
+    
+    <footer>
+        <ul>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a rel="nofollow" rel="sponsored" target="_blank"
+                    href="https://www.etsy.com/shop/DigitalGamingCenter?coupon=HALFOFF"><span id="etsy-store-text">Etsy
+                        Store</span></a></li>
+            <li class="footer_donate"><a rel="nofollow" target="_blank"
+                    href="https://www.paypal.com/donate/?hosted_button_id=3R6SK3PHRWMT8">Donate</a></li>
+        </ul>
+    </footer>
+    
+    </body>
+    
+    </html>

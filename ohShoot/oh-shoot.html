@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="ohShoot.css">
+    <link rel="stylesheet" type="text/css" href="/styleSheets/header.css">
+
+    <title>Practical Gaming Center</title>
+    <script src="ohShoot.js"></script>
+</head>
+
+<body id="gradient">
+    <!-- Below is the html for the header -->
+    <header>
+        <p class="site-name">PracticalGamingCenter</p>
+        <nav>
+            <ul>
+                <li id="header-az-tutorials"><a href="../aztutorials.html">A-Z Tutorials</a></li>
+                <li id="header-home"><a href="../index.html">Home</a></li>
+                <li id="header-tools"><a href="../tools.html">Tools</a></li>
+                <li id="header-contact"><a href="../contact.html">Contact</a></li>
+                <li id="header-shop"><a href="../shop.html">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ////////// Above is the HTML for the header \\\\\\\\\\\\ -->
+    <div id="original-labels">
+        <!-- deleting this breaks the game-->
+        <p>Current Mode: <span id="mode">Easy</span></p>
+        <p> <!-- deleting these also break the game-->
+            Loaded: <label id="playerLoaded">0</label>
+            Holster: <label id="playerHolster">5</label>
+            Loaded: <label id="enemyLoaded">0</label>
+            Holster: <label id="enemyHolster">5</label>
+        </p>
+    </div>
+
+    <!-- 
+mainYou
+mainYourCard
+mainMenu
+mainEnemyCard
+mainEnemy 
+-->
+    <div id="ohShootTitle">
+        <h1>Oh Shoot!</h1>
+    </div>
+
+    <div id="rulesTitle">
+        <!-- <h1>Rules</h1> -->
+        <button class="modeButtons" onclick="rulesBoxClose()">Close Rules</button>
+    </div>
+
+
+    <div id="rulesBox">
+
+        <div id="ruleSectionLeft">
+
+            <div class="ruleSectionLeftBoxs">
+                <p>Each hand shows each players choice. <br>
+                    You are blue, the enemy is red.</p>
+                <img src="ohShootPictures/LeftReload.png">
+            </div>
+            <div class="ruleSectionLeftBoxs">
+                <p>The bullets under "You" represent <br>
+                    how many bullets you have unloaded</p>
+                <img src="ohShootPictures/LeftBullet7.png">
+            </div>
+            <div class="ruleSectionLeftBoxs">
+                <p>This cylinder represents<br>
+                    you are loaded</p>
+                <img src="ohShootPictures/LeftCylinderLoaded.png">
+            </div>
+            <div class="ruleSectionLeftBoxs">
+                <p>This cylinder represents<br>
+                    you are not loaded</p>
+                <img src="ohShootPictures/BlankCylinder.png">
+            </div>
+
+        </div>
+
+        <!-- bellow is rules section  -->
+        <div id="ruleSectionRight">
+
+            <h1>Easy Rules</h1>
+
+            <div class="rulesSRCards">
+                <h2> Objective</h2>
+                <p>- Each player starts with 5 unloaded bullets. <br>
+                    - The first player to have all 10 bullets wins.<br>
+                    - Bullets represent your score, and get exchanged between players as the game progresses.
+                </p>
+            </div>
+
+            <div class="rulesSRCards">
+                <h2>Reload</h2>
+                <p>- Reloading removes a bullet from your inventory and reloads you.<br>
+                    - You may only have one bullet loaded at a time.</p>
+            </div>
+
+            <div class="rulesSRCards">
+                <h2>Shoot</h2>
+                <p>- You must have a bullet loaded to shoot successfully, otherwise you will shoot a blank.<br>
+                    - After you shoot, the bullet goes back to your inventory.<br>
+                    - If you shoot someone who is reloading, they still reload, and you get a bullet from their
+                    inventory. <br>
+                    - If you shoot someone who is trying to punch, you get a bullet from their inventory. <br>
+                    - If both players shoot, the bullets cancel each other out, and go back to each players
+                    inventory.<br></p>
+            </div>
+
+            <div class="rulesSRCards">
+                <h2>Block</h2>
+                <p>- Blocking only blocks bullets.</p>
+            </div>
+
+            <div class="rulesSRCards">
+                <h2>Punch</h2>
+                <p>- If you punch someone who is blocking, you take a bullet from their inventory. <br>
+                    - If you punch someone who is reloading, you cancel their reload.</p>
+            </div>
+
+            <h1>Normal Rules</h1>
+            <p class="normalRulesP">Along with the easy rules, each player starts loaded, and you may not punch twice in
+                a row.
+            </p>
+
+
+            <div id="rulesPlayerCards">
+                <h2>Click on a card<br>to select your action</h2>
+                <img src="ohShootPictures/playerShootCard.png">
+                <img src="ohShootPictures/playerReloadCard.png">
+                <img src="ohShootPictures/playerBlockCard.png">
+                <img src="ohShootPictures/playerPunchCard.png">
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div id="main">
+        <img class="mainYourCard" id="leftHand" src="ohShootPictures/leftHandBlank.png">
+
+        <!-- Player Card Below -->
+        <div class="mainYou">
+            <h2>You</h2>
+            <img id="leftBullet" src="ohShootPictures/LeftBullet5.png">
+            <img id="leftCylinder" src="ohShootPictures/BlankCylinder.png">
+
+            <label class="playerEnemyChoice" id="playerChoice">Pick Your Card</label>
+
+        </div>
+        <!-- Left Player Hand -->
+        <!-- <p>player hand picture goes here</p> -->
+
+        <!-- Main Menu -->
+        <div class="mainMenu">
+            <!-- <h1>Oh Shoot!</h1> -->
+            <!-- <h2>Current Mode: <span id="mode">Easy</span></h2> -->
+            <button class="modeButtons" onclick="rulesBoxOpen()">Rules</button><br>
+            <button id="easyButton" class="modeButtons" onclick="resetEasy()"><strong>Easy</strong></button>
+            <button id="mediumButton" class="modeButtons" onclick="resetMedium()"><strong>Normal</strong></button><br>
+            <h3 class="movesMade"><label>Moves: <span id="movesMade">0</span></label></h3><br>
+
+            <label class="comments" id="announce">First one to have all 10 bullets is the winner</label>
+        </div>
+        <!-- Right Enemy Hand -->
+        <!-- Enemy Card -->
+        <div class="mainEnemy">
+            <h2>Enemy</h2>
+            <img id="rightBullet" src="ohShootPictures/LeftBullet5.png">
+            <img id="rightCylinder" src="ohShootPictures/BlankCylinder.png">
+
+            <label class="playerEnemyChoice" id="enemyAction">...</label>
+            <!-- <p class="loadedHolster" > -->
+        </div>
+        <img class="mainEnemyCard" id="rightHand" src="ohShootPictures/rightHandBlank.png">
+
+
+    </div>
+    <!-- ///////////////////////// below are the action cards ///////////////////////// -->
+    <div id="playerCards">
+        <img class="actionCard" onclick="shoot()" src="ohShootPictures/playerShootCard.png" alt="Shoot">
+        <img class="actionCard" onclick="reload()" src="ohShootPictures/playerReloadCard.png" alt="Reload">
+        <img class="actionCard" onclick="block()" src="ohShootPictures/playerBlockCard.png" alt="Block">
+        <img class="actionCard" onclick="punch()" src="ohShootPictures/playerPunchCard.png" alt="Punch">
+    </div>
+
+</body>
+
+</html>
